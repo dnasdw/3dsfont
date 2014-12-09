@@ -1,0 +1,7 @@
+AUTO_FILES("." "src" "\\.(cpp|h)$")
+if(WIN32)
+  set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /MTd")
+  set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT")
+endif()
+ADD_EXE(charset2xllt "${src}")
+install(TARGETS charset2xllt DESTINATION bin)
