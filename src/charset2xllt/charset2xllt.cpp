@@ -84,7 +84,7 @@ int main(int argc, char* argv[])
 		return 1;
 	}
 	fprintf(fp, "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\r\n");
-	fprintf(fp, "<!DOCTYPE letter-list SYSTEM \"letter - list.dtd\">\r\n");
+	fprintf(fp, "<!DOCTYPE letter-list SYSTEM \"letter-list.dtd\">\r\n");
 	fprintf(fp, "\r\n");
 	fprintf(fp, "<letter-list version=\"1.0\">\r\n");
 	fprintf(fp, "	<head>\r\n");
