@@ -126,7 +126,7 @@ int main(int argc, char* argv[])
 		return 1;
 	}
 	fwrite("\xEF\xBB\xBF", 3, 1, fp);
-	for (int i = 0; i < nLastIndex; i++)
+	for (int i = 0; i <= nLastIndex; i++)
 	{
 		if (nIndexedCode[i] == 0)
 		{
