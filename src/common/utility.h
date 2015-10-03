@@ -37,6 +37,6 @@ typedef uint64_t u64;
 #define GNUC_PACKED __attribute__((packed))
 #endif
 
-#define CONVERT_ENDIAN(n) ((n) >> 24 & 0xFF) | ((n) >> 8 & 0xFF00) | (((n) & 0xFF00) << 8) | (((n) & 0xFF) << 24)
+#define CONVERT_ENDIAN(n) (((n) >> 24 & 0xFF) | ((n) >> 8 & 0xFF00) | (((n) & 0xFF00) << 8) | (((n) & 0xFF) << 24))
 
 #endif	// UTILITY_H_

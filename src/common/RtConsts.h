@@ -15,6 +15,17 @@ struct RtConsts
 	static const u32 BinBlockSigCMAP = CONVERT_ENDIAN('CMAP');
 	static const u32 BinBlockSigGLGR = CONVERT_ENDIAN('GLGR');
 	static const u32 BinBlockSigHTGL = CONVERT_ENDIAN('HTGL');
+	static const u32 FontFileVersion;
+	static u16 MakeVersion(u8 major, u8 minor)
+	{
+		return major << 8 | minor;
+	}
+	static u32 MakeVersion(u8 major, u8 minor, u8 micro, u8 binaryBugFix)
+	{
+		return major << 24 | minor << 16 | micro << 8 | binaryBugFix;
+	}
 };
+
+const u32 RtConsts::FontFileVersion = RtConsts::MakeVersion(3, 0, 0, 0);
 
 #endif	// RT_CONSTS_H_

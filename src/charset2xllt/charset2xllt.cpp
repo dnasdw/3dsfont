@@ -1,15 +1,4 @@
-#include <stdint.h>
-#include <stdio.h>
-#include <string.h>
-
-typedef int8_t n8;
-typedef int16_t n16;
-typedef int32_t n32;
-typedef int64_t n64;
-typedef uint8_t u8;
-typedef uint16_t u16;
-typedef uint32_t u32;
-typedef uint64_t u64;
+#include <utility.h>
 
 int main(int argc, char* argv[])
 {

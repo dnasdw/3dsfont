@@ -1,11 +1,11 @@
-#include "utility.h"
-#include "BinaryBlockHeader.h"
-#include "BinaryFileHeader.h"
-#include "CMapInfoScan.h"
-#include "CMapScanEntry.h"
-#include "FontCodeMap.h"
-#include "FontInformation.h"
-#include "RtConsts.h"
+#include <utility.h>
+#include <BinaryBlockHeader.h>
+#include <BinaryFileHeader.h>
+#include <CMapInfoScan.h>
+#include <CMapScanEntry.h>
+#include <FontCodeMap.h>
+#include <FontInformation.h>
+#include <RtConsts.h>
 
 int main(int argc, char* argv[])
 {

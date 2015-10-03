@@ -1,4 +1,6 @@
 AUTO_FILES("." "src" "\\.(cpp|h)$")
+AUTO_FILES("../common" "src" "utility\\.h")
+include_directories(${COMMON_INCLUDE_DIR})
 if(WIN32)
   set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /MTd")
   set(CMAKE_CXX_FLAGS_MINSIZEREL "${CMAKE_CXX_FLAGS_MINSIZEREL} /MT")
