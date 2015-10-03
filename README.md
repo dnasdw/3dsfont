@@ -16,3 +16,8 @@ charset2xlor charset.txt font.xlor
 ~~~
 charset2xllt charset.txt font.xllt
 ~~~
+
+- charset2xggp
+~~~
+charset2xggp charset.txt font.xggp
+~~~
