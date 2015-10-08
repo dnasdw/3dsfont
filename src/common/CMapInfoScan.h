@@ -1,5 +1,5 @@
-#ifndef CMAP_INFO_SCAN_H_
-#define CMAP_INFO_SCAN_H_
+#ifndef COMMON_CMAP_INFO_SCAN_H_
+#define COMMON_CMAP_INFO_SCAN_H_
 
 #include "utility.h"
 
@@ -10,4 +10,4 @@ struct CMapInfoScan
 } GNUC_PACKED;
 #include MSC_POP_PACKED
 
-#endif	// CMAP_INFO_SCAN_H_
+#endif	// COMMON_CMAP_INFO_SCAN_H_

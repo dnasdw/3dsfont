@@ -1,5 +1,5 @@
-#ifndef RT_CONSTS_H_
-#define RT_CONSTS_H_
+#ifndef COMMON_RT_CONSTS_H_
+#define COMMON_RT_CONSTS_H_
 
 #include "utility.h"
 
@@ -28,4 +28,4 @@ struct RtConsts
 
 const u32 RtConsts::FontFileVersion = RtConsts::MakeVersion(3, 0, 0, 0);
 
-#endif	// RT_CONSTS_H_
+#endif	// COMMON_RT_CONSTS_H_

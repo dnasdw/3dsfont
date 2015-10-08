@@ -1,5 +1,5 @@
-#ifndef FONT_INFORMATION_H_
-#define FONT_INFORMATION_H_
+#ifndef COMMON_FONT_INFORMATION_H_
+#define COMMON_FONT_INFORMATION_H_
 
 #include "utility.h"
 #include "CharWidths.h"
@@ -22,4 +22,4 @@ struct FontInformation
 } GNUC_PACKED;
 #include MSC_POP_PACKED
 
-#endif	// FONT_INFORMATION_H_
+#endif	// COMMON_FONT_INFORMATION_H_

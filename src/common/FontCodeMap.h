@@ -1,5 +1,5 @@
-#ifndef FONT_CODE_MAP_H_
-#define FONT_CODE_MAP_H_
+#ifndef COMMON_FONT_CODE_MAP_H_
+#define COMMON_FONT_CODE_MAP_H_
 
 #include "utility.h"
 
@@ -14,4 +14,4 @@ struct FontCodeMap
 } GNUC_PACKED;
 #include MSC_POP_PACKED
 
-#endif	// FONT_CODE_MAP_H_
+#endif	// COMMON_FONT_CODE_MAP_H_

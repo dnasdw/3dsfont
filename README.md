@@ -2,6 +2,11 @@
 
 ## Usage
 
+- ffnt2cfnt
+~~~
+ffnt2cfnt font.bffnt font.bcfnt
+~~~
+
 - font2charset
 ~~~
 font2charset font.bcfnt charset.txt

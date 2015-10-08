@@ -1,5 +1,5 @@
-#ifndef BINARY_FILE_HEADER_H_
-#define BINARY_FILE_HEADER_H_
+#ifndef COMMON_BINARY_FILE_HEADER_H_
+#define COMMON_BINARY_FILE_HEADER_H_
 
 #include "utility.h"
 
@@ -16,4 +16,4 @@ struct BinaryFileHeader
 } GNUC_PACKED;
 #include MSC_POP_PACKED
 
-#endif	// BINARY_FILE_HEADER_H_
+#endif	// COMMON_BINARY_FILE_HEADER_H_

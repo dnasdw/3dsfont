@@ -1,5 +1,5 @@
-#ifndef CHAR_WIDTHS_H_
-#define CHAR_WIDTHS_H_
+#ifndef COMMON_CHAR_WIDTHS_H_
+#define COMMON_CHAR_WIDTHS_H_
 
 #include "utility.h"
 
@@ -12,4 +12,4 @@ struct CharWidths
 } GNUC_PACKED;
 #include MSC_POP_PACKED
 
-#endif	// CHAR_WIDTHS_H_
+#endif	// COMMON_CHAR_WIDTHS_H_

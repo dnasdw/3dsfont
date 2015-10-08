@@ -1,5 +1,5 @@
-#ifndef BINARY_BLOCK_HEADER_H_
-#define BINARY_BLOCK_HEADER_H_
+#ifndef COMMON_BINARY_BLOCK_HEADER_H_
+#define COMMON_BINARY_BLOCK_HEADER_H_
 
 #include "utility.h"
 
@@ -11,4 +11,4 @@ struct BinaryBlockHeader
 } GNUC_PACKED;
 #include MSC_POP_PACKED
 
-#endif	// BINARY_BLOCK_HEADER_H_
+#endif	// COMMON_BINARY_BLOCK_HEADER_H_

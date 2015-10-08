@@ -1,5 +1,5 @@
-#ifndef UTILITY_H_
-#define UTILITY_H_
+#ifndef COMMON_UTILITY_H_
+#define COMMON_UTILITY_H_
 
 #define COMPILER_MSC  1
 #define COMPILER_GNUC 2
@@ -39,4 +39,4 @@ typedef uint64_t u64;
 
 #define CONVERT_ENDIAN(n) (((n) >> 24 & 0xFF) | ((n) >> 8 & 0xFF00) | (((n) & 0xFF00) << 8) | (((n) & 0xFF) << 24))
 
-#endif	// UTILITY_H_
+#endif	// COMMON_UTILITY_H_

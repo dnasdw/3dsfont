@@ -1,5 +1,5 @@
-#ifndef CMAP_SCAN_ENTRY_H_
-#define CMAP_SCAN_ENTRY_H_
+#ifndef COMMON_CMAP_SCAN_ENTRY_H_
+#define COMMON_CMAP_SCAN_ENTRY_H_
 
 #include "utility.h"
 
@@ -11,4 +11,4 @@ struct CMapScanEntry
 } GNUC_PACKED;
 #include MSC_POP_PACKED
 
-#endif	// CMAP_SCAN_ENTRY_H_
+#endif	// COMMON_CMAP_SCAN_ENTRY_H_
