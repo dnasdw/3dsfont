@@ -7,6 +7,30 @@
 #include <FontInformation.h>
 #include <RtConsts.h>
 
+u16 FCCP932ToU16(int a_nCode)
+{
+	string sTemp;
+	if (a_nCode > 0xFF)
+	{
+		sTemp.append(1, a_nCode >> 8 & 0xFF);
+	}
+	sTemp.append(1, a_nCode & 0xFF);
+	U16String sConverted = FSCP932ToU16(sTemp);
+	return sConverted[0];
+}
+
+u16 FCCP1252ToU16(int a_nCode)
+{
+	string sTemp;
+	if (a_nCode > 0xFF)
+	{
+		sTemp.append(1, a_nCode >> 8 & 0xFF);
+	}
+	sTemp.append(1, a_nCode & 0xFF);
+	U16String sConverted = FSCP1252ToU16(sTemp);
+	return sConverted[0];
+}
+
 int main(int argc, char* argv[])
 {
 	u16 nIndexedCode[0x10000] = {};
@@ -63,7 +87,18 @@ int main(int argc, char* argv[])
 					u16 uStartIndex = *reinterpret_cast<u16*>(pFont + nOffset);
 					for (int i = pFontCodeMap->CodeBegin; i <= pFontCodeMap->CodeEnd; i++)
 					{
-						nIndexedCode[uStartIndex + i - pFontCodeMap->CodeBegin] = i;
+						switch (pFontInformation->Encoding)
+						{
+						case 2:
+							nIndexedCode[uStartIndex + i - pFontCodeMap->CodeBegin] = FCCP932ToU16(i);
+							break;
+						case 3:
+							nIndexedCode[uStartIndex + i - pFontCodeMap->CodeBegin] = FCCP1252ToU16(i);
+							break;
+						default:
+							nIndexedCode[uStartIndex + i - pFontCodeMap->CodeBegin] = i;
+							break;
+						}
 					}
 					if (uStartIndex + pFontCodeMap->CodeEnd - pFontCodeMap->CodeBegin > nLastIndex)
 					{
@@ -78,7 +113,18 @@ int main(int argc, char* argv[])
 						int nIndex = *pIndex++;
 						if (nIndex != RtConsts::InvalidGlyphIndex)
 						{
-							nIndexedCode[nIndex] = i;
+							switch (pFontInformation->Encoding)
+							{
+							case 2:
+								nIndexedCode[nIndex] = FCCP932ToU16(i);
+								break;
+							case 3:
+								nIndexedCode[nIndex] = FCCP1252ToU16(i);
+								break;
+							default:
+								nIndexedCode[nIndex] = i;
+								break;
+							}
 							if (nIndex > nLastIndex)
 							{
 								nLastIndex = nIndex;
@@ -93,7 +139,18 @@ int main(int argc, char* argv[])
 					CMapScanEntry* pCMapScanEntry = reinterpret_cast<CMapScanEntry*>(pFont + nOffset);
 					for (int i = 0; i < pCMapInfoScan->Num; i++)
 					{
-						nIndexedCode[pCMapScanEntry[i].Index] = pCMapScanEntry[i].Code;
+						switch (pFontInformation->Encoding)
+						{
+						case 2:
+							nIndexedCode[pCMapScanEntry[i].Index] = FCCP932ToU16(pCMapScanEntry[i].Code);
+							break;
+						case 3:
+							nIndexedCode[pCMapScanEntry[i].Index] = FCCP1252ToU16(pCMapScanEntry[i].Code);
+							break;
+						default:
+							nIndexedCode[pCMapScanEntry[i].Index] = pCMapScanEntry[i].Code;
+							break;
+						}
 						if (pCMapScanEntry[i].Index > nLastIndex)
 						{
 							nLastIndex = pCMapScanEntry[i].Index;
