@@ -99,6 +99,10 @@ int main(int argc, char* argv[])
 							nIndexedCode[uStartIndex + i - pFontCodeMap->CodeBegin] = i;
 							break;
 						}
+						if (i < 0x20)
+						{
+							nIndexedCode[uStartIndex + i - pFontCodeMap->CodeBegin] = 0;
+						}
 					}
 					if (uStartIndex + pFontCodeMap->CodeEnd - pFontCodeMap->CodeBegin > nLastIndex)
 					{
@@ -125,6 +129,10 @@ int main(int argc, char* argv[])
 								nIndexedCode[nIndex] = i;
 								break;
 							}
+							if (i < 0x20)
+							{
+								nIndexedCode[nIndex] = 0;
+							}
 							if (nIndex > nLastIndex)
 							{
 								nLastIndex = nIndex;
@@ -150,6 +158,10 @@ int main(int argc, char* argv[])
 						default:
 							nIndexedCode[pCMapScanEntry[i].Index] = pCMapScanEntry[i].Code;
 							break;
+						}
+						if (pCMapScanEntry[i].Code < 0x20)
+						{
+							nIndexedCode[pCMapScanEntry[i].Index] = 0;
 						}
 						if (pCMapScanEntry[i].Index > nLastIndex)
 						{
