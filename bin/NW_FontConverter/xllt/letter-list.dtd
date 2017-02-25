@@ -1,0 +1,22 @@
+<!ELEMENT letter-list (head?, body)>
+<!ATTLIST letter-list version CDATA #REQUIRED>
+
+	<!ELEMENT head (create | title | comment | generator)*>
+
+		<!ELEMENT create EMPTY>
+		<!ATTLIST create user CDATA #IMPLIED>
+		<!ATTLIST create host CDATA #IMPLIED>
+		<!ATTLIST create date CDATA #IMPLIED>
+		<!ATTLIST create source CDATA #IMPLIED>
+
+		<!ELEMENT title (#PCDATA)>
+
+		<!ELEMENT comment (#PCDATA)>
+
+		<!ELEMENT generator EMPTY>
+		<!ATTLIST generator name CDATA #REQUIRED>
+		<!ATTLIST generator version CDATA #REQUIRED>
+
+	<!ELEMENT body (letter+)>
+	
+		<!ELEMENT letter (#PCDATA)>

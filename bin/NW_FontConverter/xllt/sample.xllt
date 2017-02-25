@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE letter-list SYSTEM "letter-list.dtd">
+
+<letter-list version="1.0">
+	<head>
+		<create user="sample" date="2005-02-18T10:51:13" />
+		<title>xlltサンプル</title>
+		<comment>文字フィルタファイルのサンプルです</comment>
+	</head>
+
+	<body>
+		<letter>
+			FontConverter
+			あいうえかきくけ
+			任天堂
+		</letter>
+	</body>
+
+</letter-list>
