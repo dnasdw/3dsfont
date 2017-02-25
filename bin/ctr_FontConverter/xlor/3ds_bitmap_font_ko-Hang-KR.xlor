@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE letter-order SYSTEM "letter-order.dtd">
+
+<letter-order version="1.0">
+	<head>
+		<create user="" date="2010-07-12" />
+		<title>CTR cbf_ko-Hang-KR (KR+JP,EU,US)</title>
+		<comment>KSX1001 + ハングル字母94文字 ＋ 追加５文字 + cbf_std.xlor(日米欧版) + 0xE06F（ダミー文字）に含まれる記号を出力します</comment>
+	</head>
+
+	<body>
+		<order>
+		<!-- Private Use Area (DS Extension) -->
+		&#xE000; &#xE001; &#xE002; &#xE003; &#xE004; &#xE005; &#xE006; &#xE007; &#xE008; &#xE009; &#xE00A; &#xE00B; &#xE00C; &#xE00D; &#xE00E; &#xE00F; 
+		&#xE010; &#xE011; &#xE012; &#xE013; &#xE014; &#xE015; &#xE016; &#xE017; &#xE018; &#xE019; &#xE01A; &#xE01B; &#xE01C; &#xE01D; &#xE01E; &#xE01F; 
+		&#xE020; &#xE021; &#xE022; &#xE023; &#xE024; &#xE025; &#xE026; &#xE027; &#xE028; &#xE029; &#xE02A; &#xE02B; &#xE02C; &#xE02D; &#xE02E; &#xE02F; 
+		&#xE030; &#xE031; &#xE032; &#xE033; &#xE034; &#xE035; &#xE036; &#xE037; &#xE038; &#xE039; &#xE03A; &#xE03B; &#xE03C; &#xE03D; &#xE03E; &#xE03F; 
+
+		<!-- Private Use Area (Wii Extension) -->
+		&#xE040; &#xE041; &#xE042; &#xE043; &#xE044; &#xE045; &#xE046; &#xE047; &#xE048; &#xE049; &#xE04A; &#xE04B; &#xE04C; &#xE04D; &#xE04E; &#xE04F; 
+		&#xE050; &#xE051; &#xE052; &#xE053; &#xE054; &#xE055; &#xE056; &#xE057; &#xE058; &#xE059; &#xE05A; &#xE05B; &#xE05C; &#xE05D; &#xE05E; &#xE05F; 
+		&#xE060; &#xE061; &#xE062; &#xE063; &#xE064; &#xE065; &#xE066; &#xE067; &#xE068; &#xE069; &#xE06A; &#xE06B; &#xE06C; &#xE06D; &#xE06E; &#xE06F; 
+
+		<!-- ctr_extension -->
+		&#xE070; &#xE071; &#xE072; &#xE073; &#xE074; &#xE075; &#xE076; &#xE077; &#xE078; &#xE079; &#xE07A; &#xE07B; &#xE07C; &#xE07D; &#xE07E; <null/>
+		
+		<!-- ascii 95 -->
+		<sp/> &#x0021; &#x0022; &#x0023; &#x0024; &#x0025; &#x0026; &#x0027; &#x0028; &#x0029; &#x002A; &#x002B; &#x002C; &#x002D; &#x002E; &#x002F; 
+		&#x0030; &#x0031; &#x0032; &#x0033; &#x0034; &#x0035; &#x0036; &#x0037; &#x0038; &#x0039; &#x003A; &#x003B; &#x003C; &#x003D; &#x003E; &#x003F; 
+		&#x0040; &#x0041; &#x0042; &#x0043; &#x0044; &#x0045; &#x0046; &#x0047; &#x0048; &#x0049; &#x004A; &#x004B; &#x004C; &#x004D; &#x004E; &#x004F; 
+		&#x0050; &#x0051; &#x0052; &#x0053; &#x0054; &#x0055; &#x0056; &#x0057; &#x0058; &#x0059; &#x005A; &#x005B; &#x005C; &#x005D; &#x005E; &#x005F; 
+		&#x0060; &#x0061; &#x0062; &#x0063; &#x0064; &#x0065; &#x0066; &#x0067; &#x0068; &#x0069; &#x006A; &#x006B; &#x006C; &#x006D; &#x006E; &#x006F; 
+		&#x0070; &#x0071; &#x0072; &#x0073; &#x0074; &#x0075; &#x0076; &#x0077; &#x0078; &#x0079; &#x007A; &#x007B; &#x007C; &#x007D; &#x007E;
+
+		<!-- for DS IPL banner -->
+		&#x007F;
+
+		<!-- cp1252 (UK/FR/DE/SP/IT/NL) -->
+		&#x20AC; <null/>  &#x201A; &#x0192; &#x201E; &#x2026; &#x2020; &#x2021; &#x02C6; &#x2030; &#x0160; &#x2039; &#x0152; <null/>  &#x017D; <null/>  
+		<null/>  &#x2018; &#x2019; &#x201C; &#x201D; &#x2022; &#x2013; &#x2014; &#x02DC; &#x2122; &#x0161; &#x203A; &#x0153; <null/>  &#x017E; &#x0178; 
+
+		<!-- Latin-1 -->
+		&#x00A0; &#x00A1; &#x00A2; &#x00A3; &#x00A4; &#x00A5; &#x00A6; &#x00A7; &#x00A8; &#x00A9; &#x00AA; &#x00AB; &#x00AC; &#x00AD; &#x00AE; &#x00AF; 
+		&#x00B0; &#x00B1; &#x00B2; &#x00B3; &#x00B4; &#x00B5; &#x00B6; &#x00B7; &#x00B8; &#x00B9; &#x00BA; &#x00BB; &#x00BC; &#x00BD; &#x00BE; &#x00BF; 
+		&#x00C0; &#x00C1; &#x00C2; &#x00C3; &#x00C4; &#x00C5; &#x00C6; &#x00C7; &#x00C8; &#x00C9; &#x00CA; &#x00CB; &#x00CC; &#x00CD; &#x00CE; &#x00CF; 
+		&#x00D0; &#x00D1; &#x00D2; &#x00D3; &#x00D4; &#x00D5; &#x00D6; &#x00D7; &#x00D8; &#x00D9; &#x00DA; &#x00DB; &#x00DC; &#x00DD; &#x00DE; &#x00DF; 
+		&#x00E0; &#x00E1; &#x00E2; &#x00E3; &#x00E4; &#x00E5; &#x00E6; &#x00E7; &#x00E8; &#x00E9; &#x00EA; &#x00EB; &#x00EC; &#x00ED; &#x00EE; &#x00EF; 
+		&#x00F0; &#x00F1; &#x00F2; &#x00F3; &#x00F4; &#x00F5; &#x00F6; &#x00F7; &#x00F8; &#x00F9; &#x00FA; &#x00FB; &#x00FC; &#x00FD; &#x00FE; &#x00FF; 
+
+		<!-- (cp1253 + ISO8859-7) - cp1252 [Greek] -->
+		&#x037A; &#x037E; &#x0385; &#x0386; &#x0387; &#x0384; <null/>  <null/>  &#x0388; &#x0389; &#x038A; <null/>  &#x038C; <null/>  &#x038E; &#x038F; 
+		&#x0390; &#x0391; &#x0392; &#x0393; &#x0394; &#x0395; &#x0396; &#x0397; &#x0398; &#x0399; &#x039A; &#x039B; &#x039C; &#x039D; &#x039E; &#x039F; 
+		&#x03A0; &#x03A1; <null/>  &#x03A3; &#x03A4; &#x03A5; &#x03A6; &#x03A7; &#x03A8; &#x03A9; &#x03AA; &#x03AB; &#x03AC; &#x03AD; &#x03AE; &#x03AF; 
+		&#x03B0; &#x03B1; &#x03B2; &#x03B3; &#x03B4; &#x03B5; &#x03B6; &#x03B7; &#x03B8; &#x03B9; &#x03BA; &#x03BB; &#x03BC; &#x03BD; &#x03BE; &#x03BF; 
+		&#x03C0; &#x03C1; &#x03C2; &#x03C3; &#x03C4; &#x03C5; &#x03C6; &#x03C7; &#x03C8; &#x03C9; &#x03CA; &#x03CB; &#x03CC; &#x03CD; &#x03CE; &#x20AF; 
+		
+		<!-- Full Width Ascii 94 -->
+		<null/>  &#xFF01; &#xFF02; &#xFF03; &#xFF04; &#xFF05; &#xFF06; &#xFF07; &#xFF08; &#xFF09; &#xFF0A; &#xFF0B; &#xFF0C; &#xFF0D; &#xFF0E; &#xFF0F; 
+		&#xFF10; &#xFF11; &#xFF12; &#xFF13; &#xFF14; &#xFF15; &#xFF16; &#xFF17; &#xFF18; &#xFF19; &#xFF1A; &#xFF1B; &#xFF1C; &#xFF1D; &#xFF1E; &#xFF1F; 
+		&#xFF20; &#xFF21; &#xFF22; &#xFF23; &#xFF24; &#xFF25; &#xFF26; &#xFF27; &#xFF28; &#xFF29; &#xFF2A; &#xFF2B; &#xFF2C; &#xFF2D; &#xFF2E; &#xFF2F; 
+		&#xFF30; &#xFF31; &#xFF32; &#xFF33; &#xFF34; &#xFF35; &#xFF36; &#xFF37; &#xFF38; &#xFF39; &#xFF3A; &#xFF3B; &#xFFE6; &#xFF3D; &#xFF3E; &#xFF3F; 
+		&#xFF40; &#xFF41; &#xFF42; &#xFF43; &#xFF44; &#xFF45; &#xFF46; &#xFF47; &#xFF48; &#xFF49; &#xFF4A; &#xFF4B; &#xFF4C; &#xFF4D; &#xFF4E; &#xFF4F; 
+		&#xFF50; &#xFF51; &#xFF52; &#xFF53; &#xFF54; &#xFF55; &#xFF56; &#xFF57; &#xFF58; &#xFF59; &#xFF5A; &#xFF5B; &#xFF5C; &#xFF5D; &#xFFE3; <null/>  
+
+		<!-- 日米欧版に含まれる記号 -->
+		<null/>  &#xFFE4; <null/>  &#xFF62; &#xFF63; &#xFF65; <null/>  &#x2010; <null/>  &#x221F; &#x2266; &#x2267; &#x22BF; <null/>  &#x246F; &#x2470; 
+		&#x2471; &#x2472; &#x2473; <null/>  &#x266F; &#x25EF; &#x3005; &#x3006; &#x3007; <null/>  &#x301D; &#x301F; &#x30FB; &#x33CD; <null/>  <null/>
+
+		<!-- CTR append euro char -->
+		&#x0100; &#x0101; &#x0102; &#x0103; &#x0104; &#x0105; &#x0106; &#x0107; &#x010A; &#x010B; &#x010C; &#x010D; &#x010E; &#x010F; &#x0110; &#x0111; 
+		&#x0112; &#x0113; &#x011A; &#x011B; &#x0116; &#x0117; &#x0118; &#x0119; &#x011E; &#x011F; &#x0120; &#x0121; &#x0122; &#x0123; &#x012A; &#x012B; 
+		&#x012E; &#x012F; &#x0130; &#x0136; &#x0137; &#x0139; &#x013A; &#x013B; &#x013C; &#x013D; &#x013E; &#x0143; &#x0144; &#x0145; &#x0146; &#x0147; 
+		&#x0148; &#x0150; &#x0151; &#x0154; &#x0155; &#x0158; &#x0159; &#x015A; &#x015B; &#x015E; &#x015F; &#x0164; &#x0165; &#x016A; &#x016B; &#x016E; 
+		&#x016F; &#x0170; &#x0171; &#x0172; &#x0173; &#x0179; &#x017A; &#x017B; &#x017C; &#x01C5; &#x01C6; &#x01F2; &#x01F3; &#x021A; &#x021B; &#x0335; 
+		&#x0336; &#x0363; &#x0364; &#x0366; &#x036C; &#x201B; <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  
+
+		<!-- Hirakana Katakana 169 -->
+		<null/>  &#x3041; &#x3042; &#x3043; &#x3044; &#x3045; &#x3046; &#x3047; &#x3048; &#x3049; &#x304A; &#x304B; &#x304C; &#x304D; &#x304E; &#x304F; 
+		&#x3050; &#x3051; &#x3052; &#x3053; &#x3054; &#x3055; &#x3056; &#x3057; &#x3058; &#x3059; &#x305A; &#x305B; &#x305C; &#x305D; &#x305E; &#x305F; 
+		&#x3060; &#x3061; &#x3062; &#x3063; &#x3064; &#x3065; &#x3066; &#x3067; &#x3068; &#x3069; &#x306A; &#x306B; &#x306C; &#x306D; &#x306E; &#x306F; 
+		&#x3070; &#x3071; &#x3072; &#x3073; &#x3074; &#x3075; &#x3076; &#x3077; &#x3078; &#x3079; &#x307A; &#x307B; &#x307C; &#x307D; &#x307E; &#x307F; 
+		&#x3080; &#x3081; &#x3082; &#x3083; &#x3084; &#x3085; &#x3086; &#x3087; &#x3088; &#x3089; &#x308A; &#x308B; &#x308C; &#x308D; &#x308E; &#x308F; 
+		&#x3090; &#x3091; &#x3092; &#x3093; <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  
+		<null/>  &#x30A1; &#x30A2; &#x30A3; &#x30A4; &#x30A5; &#x30A6; &#x30A7; &#x30A8; &#x30A9; &#x30AA; &#x30AB; &#x30AC; &#x30AD; &#x30AE; &#x30AF; 
+		&#x30B0; &#x30B1; &#x30B2; &#x30B3; &#x30B4; &#x30B5; &#x30B6; &#x30B7; &#x30B8; &#x30B9; &#x30BA; &#x30BB; &#x30BC; &#x30BD; &#x30BE; &#x30BF; 
+		&#x30C0; &#x30C1; &#x30C2; &#x30C3; &#x30C4; &#x30C5; &#x30C6; &#x30C7; &#x30C8; &#x30C9; &#x30CA; &#x30CB; &#x30CC; &#x30CD; &#x30CE; &#x30CF; 
+		&#x30D0; &#x30D1; &#x30D2; &#x30D3; &#x30D4; &#x30D5; &#x30D6; &#x30D7; &#x30D8; &#x30D9; &#x30DA; &#x30DB; &#x30DC; &#x30DD; &#x30DE; &#x30DF; 
+		&#x30E0; &#x30E1; &#x30E2; &#x30E3; &#x30E4; &#x30E5; &#x30E6; &#x30E7; &#x30E8; &#x30E9; &#x30EA; &#x30EB; &#x30EC; &#x30ED; &#x30EE; &#x30EF; 
+		&#x30F0; &#x30F1; &#x30F2; &#x30F3; &#x30F4; &#x30F5; &#x30F6; <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  
+		<!-- for WiiName -->
+		&#x30FC;
+
+		<!-- Hangul Symbol 539 -->
+		&#x3000; &#x3001; &#x3002; &#x2025; &#x3003; &#x2225; &#xFF3C; &#x223C; &#x3014; &#x3015; &#x3008; &#x3009; &#x300A; &#x300B; &#x300C; &#x300D; 
+		&#x300E; &#x300F; &#x3010; &#x3011; &#x2260; &#x2264; &#x2265; &#x221E; &#x2234; &#x2032; &#x2033; &#x2103; &#x212B; &#xFFE0; &#xFFE1; &#xFFE5; 
+		&#x2642; &#x2640; &#x2220; &#x22A5; &#x2312; &#x2202; &#x2207; &#x2261; &#x2252; &#x203B; &#x2606; &#x2605; &#x25CB; &#x25CF; &#x25CE; &#x25C7; 
+		&#x25C6; &#x25A1; &#x25A0; &#x25B3; &#x25B2; &#x25BD; &#x25BC; &#x2192; &#x2190; &#x2191; &#x2193; &#x2194; &#x3013; &#x226A; &#x226B; &#x221A; 
+		&#x223D; &#x221D; &#x2235; &#x222B; &#x222C; &#x2208; &#x220B; &#x2286; &#x2287; &#x2282; &#x2283; &#x222A; &#x2229; &#x2227; &#x2228; &#xFFE2; 
+		&#x21D2; &#x21D4; &#x2200; &#x2203; &#xFF5E; &#x02C7; &#x02D8; &#x02DD; &#x02DA; &#x02D9; &#x02DB; &#x02D0; &#x222E; &#x2211; &#x220F; &#x2109; 
+		&#x25C1; &#x25C0; &#x25B7; &#x25B6; &#x2664; &#x2660; &#x2661; &#x2665; &#x2667; &#x2663; &#x2299; &#x25C8; &#x25A3; &#x25D0; &#x25D1; &#x2592; 
+		&#x25A4; &#x25A5; &#x25A8; &#x25A7; &#x25A6; &#x25A9; &#x2668; &#x260F; &#x260E; &#x261C; &#x261E; &#x2195; &#x2197; &#x2199; &#x2196; &#x2198; 
+		&#x266D; &#x2669; &#x266A; &#x266C; &#x327F; &#x321C; &#x2116; &#x33C7; &#x33C2; &#x33D8; &#x2121; &#x2170; &#x2171; &#x2172; &#x2173; &#x2174; 
+		&#x2175; &#x2176; &#x2177; &#x2178; &#x2179; &#x2160; &#x2161; &#x2162; &#x2163; &#x2164; &#x2165; &#x2166; &#x2167; &#x2168; &#x2169; &#x2500; 
+		&#x2502; &#x250C; &#x2510; &#x2518; &#x2514; &#x251C; &#x252C; &#x2524; &#x2534; &#x253C; &#x2501; &#x2503; &#x250F; &#x2513; &#x251B; &#x2517; 
+		&#x2523; &#x2533; &#x252B; &#x253B; &#x254B; &#x2520; &#x252F; &#x2528; &#x2537; &#x253F; &#x251D; &#x2530; &#x2525; &#x2538; &#x2542; &#x2512; 
+		&#x2511; &#x251A; &#x2519; &#x2516; &#x2515; &#x250E; &#x250D; &#x251E; &#x251F; &#x2521; &#x2522; &#x2526; &#x2527; &#x2529; &#x252A; &#x252D; 
+		&#x252E; &#x2531; &#x2532; &#x2535; &#x2536; &#x2539; &#x253A; &#x253D; &#x253E; &#x2540; &#x2541; &#x2543; &#x2544; &#x2545; &#x2546; &#x2547; 
+		&#x2548; &#x2549; &#x254A; &#x3395; &#x3396; &#x3397; &#x2113; &#x3398; &#x33C4; &#x33A3; &#x33A4; &#x33A5; &#x33A6; &#x3399; &#x339A; &#x339B; 
+		&#x339C; &#x339D; &#x339E; &#x339F; &#x33A0; &#x33A1; &#x33A2; &#x33CA; &#x338D; &#x338E; &#x338F; &#x33CF; &#x3388; &#x3389; &#x33C8; &#x33A7; 
+		&#x33A8; &#x33B0; &#x33B1; &#x33B2; &#x33B3; &#x33B4; &#x33B5; &#x33B6; &#x33B7; &#x33B8; &#x33B9; &#x3380; &#x3381; &#x3382; &#x3383; &#x3384; 
+		&#x33BA; &#x33BB; &#x33BC; &#x33BD; &#x33BE; &#x33BF; &#x3390; &#x3391; &#x3392; &#x3393; &#x3394; &#x2126; &#x33C0; &#x33C1; &#x338A; &#x338B; 
+		&#x338C; &#x33D6; &#x33C5; &#x33AD; &#x33AE; &#x33AF; &#x33DB; &#x33A9; &#x33AA; &#x33AB; &#x33AC; &#x33DD; &#x33D0; &#x33D3; &#x33C3; &#x33C9; 
+		&#x33DC; &#x33C6; &#x0126; &#x0132; &#x013F; &#x0141; &#x0166; &#x014A; &#x3260; &#x3261; &#x3262; &#x3263; &#x3264; &#x3265; &#x3266; &#x3267; 
+		&#x3268; &#x3269; &#x326A; &#x326B; &#x326C; &#x326D; &#x326E; &#x326F; &#x3270; &#x3271; &#x3272; &#x3273; &#x3274; &#x3275; &#x3276; &#x3277; 
+		&#x3278; &#x3279; &#x327A; &#x327B; &#x24D0; &#x24D1; &#x24D2; &#x24D3; &#x24D4; &#x24D5; &#x24D6; &#x24D7; &#x24D8; &#x24D9; &#x24DA; &#x24DB; 
+		&#x24DC; &#x24DD; &#x24DE; &#x24DF; &#x24E0; &#x24E1; &#x24E2; &#x24E3; &#x24E4; &#x24E5; &#x24E6; &#x24E7; &#x24E8; &#x24E9; &#x2460; &#x2461; 
+		&#x2462; &#x2463; &#x2464; &#x2465; &#x2466; &#x2467; &#x2468; &#x2469; &#x246A; &#x246B; &#x246C; &#x246D; &#x246E; &#x2153; &#x2154; &#x215B; 
+		&#x215C; &#x215D; &#x215E; <null/>  &#x0127; &#x0131; &#x0133; &#x0138; &#x0140; &#x0142; &#x0167; &#x014B; &#x0149; &#x3200; &#x3201; &#x3202; 
+		&#x3203; &#x3204; &#x3205; &#x3206; &#x3207; &#x3208; &#x3209; &#x320A; &#x320B; &#x320C; &#x320D; &#x320E; &#x320F; &#x3210; &#x3211; &#x3212; 
+		&#x3213; &#x3214; &#x3215; &#x3216; &#x3217; &#x3218; &#x3219; &#x321A; &#x321B; &#x249C; &#x249D; &#x249E; &#x249F; &#x24A0; &#x24A1; &#x24A2; 
+		&#x24A3; &#x24A4; &#x24A5; &#x24A6; &#x24A7; &#x24A8; &#x24A9; &#x24AA; &#x24AB; &#x24AC; &#x24AD; &#x24AE; &#x24AF; &#x24B0; &#x24B1; &#x24B2; 
+		&#x24B3; &#x24B4; &#x24B5; &#x2474; &#x2475; &#x2476; &#x2477; &#x2478; &#x2479; &#x247A; &#x247B; &#x247C; &#x247D; &#x247E; &#x247F; &#x2480; 
+		&#x2481; &#x2482; &#x2074; &#x207F; &#x2081; &#x2082; &#x2083; &#x2084; &#x0410; &#x0411; &#x0412; &#x0413; &#x0414; &#x0415; &#x0401; &#x0416; 
+		&#x0417; &#x0418; &#x0419; &#x041A; &#x041B; &#x041C; &#x041D; &#x041E; &#x041F; &#x0420; &#x0421; &#x0422; &#x0423; &#x0424; &#x0425; &#x0426; 
+		&#x0427; &#x0428; &#x0429; &#x042A; &#x042B; &#x042C; &#x042D; &#x042E; &#x042F; &#x0430; &#x0431; &#x0432; &#x0433; &#x0434; &#x0435; &#x0451; 
+		&#x0436; &#x0437; &#x0438; &#x0439; &#x043A; &#x043B; &#x043C; &#x043D; &#x043E; &#x043F; &#x0440; &#x0441; &#x0442; &#x0443; &#x0444; &#x0445; 
+		&#x0446; &#x0447; &#x0448; &#x0449; &#x044A; &#x044B; &#x044C; &#x044D; &#x044E; &#x044F; &#x20A9; <null/>  <null/>  <null/>  
+		<!-- For WiiName -->
+		&#x3012; &#x2015; 
+
+
+		<!-- Hangle Jamo Compatibility 94 -->
+		<null/>  &#x3131; &#x3132; &#x3133; &#x3134; &#x3135; &#x3136; &#x3137; &#x3138; &#x3139; &#x313A; &#x313B; &#x313C; &#x313D; &#x313E; &#x313F; 
+		&#x3140; &#x3141; &#x3142; &#x3143; &#x3144; &#x3145; &#x3146; &#x3147; &#x3148; &#x3149; &#x314A; &#x314B; &#x314C; &#x314D; &#x314E; &#x314F; 
+		&#x3150; &#x3151; &#x3152; &#x3153; &#x3154; &#x3155; &#x3156; &#x3157; &#x3158; &#x3159; &#x315A; &#x315B; &#x315C; &#x315D; &#x315E; &#x315F; 
+		&#x3160; &#x3161; &#x3162; &#x3163; &#x3164; &#x3165; &#x3166; &#x3167; &#x3168; &#x3169; &#x316A; &#x316B; &#x316C; &#x316D; &#x316E; &#x316F; 
+		&#x3170; &#x3171; &#x3172; &#x3173; &#x3174; &#x3175; &#x3176; &#x3177; &#x3178; &#x3179; &#x317A; &#x317B; &#x317C; &#x317D; &#x317E; &#x317F; 
+		&#x3180; &#x3181; &#x3182; &#x3183; &#x3184; &#x3185; &#x3186; &#x3187; &#x3188; &#x3189; &#x318A; &#x318B; &#x318C; &#x318D; &#x318E; <null/>
+
+
+		<!-- KSX1001 2350 -->
+		&#xAC00; &#xAC01; &#xAC04; &#xAC07; &#xAC08; &#xAC09; &#xAC0A; &#xAC10; &#xAC11; &#xAC12; &#xAC13; &#xAC14; &#xAC15; &#xAC16; &#xAC17; &#xAC19; 
+		&#xAC1A; &#xAC1B; &#xAC1C; &#xAC1D; &#xAC20; &#xAC24; &#xAC2C; &#xAC2D; &#xAC2F; &#xAC30; &#xAC31; &#xAC38; &#xAC39; &#xAC3C; &#xAC40; &#xAC4B; 
+		&#xAC4D; &#xAC54; &#xAC58; &#xAC5C; &#xAC70; &#xAC71; &#xAC74; &#xAC77; &#xAC78; &#xAC7A; &#xAC80; &#xAC81; &#xAC83; &#xAC84; &#xAC85; &#xAC86; 
+		&#xAC89; &#xAC8A; &#xAC8B; &#xAC8C; &#xAC90; &#xAC94; &#xAC9C; &#xAC9D; &#xAC9F; &#xACA0; &#xACA1; &#xACA8; &#xACA9; &#xACAA; &#xACAC; &#xACAF; 
+		&#xACB0; &#xACB8; &#xACB9; &#xACBB; &#xACBC; &#xACBD; &#xACC1; &#xACC4; &#xACC8; &#xACCC; &#xACD5; &#xACD7; &#xACE0; &#xACE1; &#xACE4; &#xACE7; 
+		&#xACE8; &#xACEA; &#xACEC; &#xACEF; &#xACF0; &#xACF1; &#xACF3; &#xACF5; &#xACF6; &#xACFC; &#xACFD; &#xAD00; &#xAD04; &#xAD06; &#xAD0C; &#xAD0D; 
+		&#xAD0F; &#xAD11; &#xAD18; &#xAD1C; &#xAD20; &#xAD29; &#xAD2C; &#xAD2D; &#xAD34; &#xAD35; &#xAD38; &#xAD3C; &#xAD44; &#xAD45; &#xAD47; &#xAD49; 
+		&#xAD50; &#xAD54; &#xAD58; &#xAD61; &#xAD63; &#xAD6C; &#xAD6D; &#xAD70; &#xAD73; &#xAD74; &#xAD75; &#xAD76; &#xAD7B; &#xAD7C; &#xAD7D; &#xAD7F; 
+		&#xAD81; &#xAD82; &#xAD88; &#xAD89; &#xAD8C; &#xAD90; &#xAD9C; &#xAD9D; &#xADA4; &#xADB7; &#xADC0; &#xADC1; &#xADC4; &#xADC8; &#xADD0; &#xADD1; 
+		&#xADD3; &#xADDC; &#xADE0; &#xADE4; &#xADF8; &#xADF9; &#xADFC; &#xADFF; &#xAE00; &#xAE01; &#xAE08; &#xAE09; &#xAE0B; &#xAE0D; &#xAE14; &#xAE30; 
+		&#xAE31; &#xAE34; &#xAE37; &#xAE38; &#xAE3A; &#xAE40; &#xAE41; &#xAE43; &#xAE45; &#xAE46; &#xAE4A; &#xAE4C; &#xAE4D; &#xAE4E; &#xAE50; &#xAE54; 
+		&#xAE56; &#xAE5C; &#xAE5D; &#xAE5F; &#xAE60; &#xAE61; &#xAE65; &#xAE68; &#xAE69; &#xAE6C; &#xAE70; &#xAE78; &#xAE79; &#xAE7B; &#xAE7C; &#xAE7D; 
+		&#xAE84; &#xAE85; &#xAE8C; &#xAEBC; &#xAEBD; &#xAEBE; &#xAEC0; &#xAEC4; &#xAECC; &#xAECD; &#xAECF; &#xAED0; &#xAED1; &#xAED8; &#xAED9; &#xAEDC; 
+		&#xAEE8; &#xAEEB; &#xAEED; &#xAEF4; &#xAEF8; &#xAEFC; &#xAF07; &#xAF08; &#xAF0D; &#xAF10; &#xAF2C; &#xAF2D; &#xAF30; &#xAF32; &#xAF34; &#xAF3C; 
+		&#xAF3D; &#xAF3F; &#xAF41; &#xAF42; &#xAF43; &#xAF48; &#xAF49; &#xAF50; &#xAF5C; &#xAF5D; &#xAF64; &#xAF65; &#xAF79; &#xAF80; &#xAF84; &#xAF88; 
+		&#xAF90; &#xAF91; &#xAF95; &#xAF9C; &#xAFB8; &#xAFB9; &#xAFBC; &#xAFC0; &#xAFC7; &#xAFC8; &#xAFC9; &#xAFCB; &#xAFCD; &#xAFCE; &#xAFD4; &#xAFDC; 
+		&#xAFE8; &#xAFE9; &#xAFF0; &#xAFF1; &#xAFF4; &#xAFF8; &#xB000; &#xB001; &#xB004; &#xB00C; &#xB010; &#xB014; &#xB01C; &#xB01D; &#xB028; &#xB044; 
+		&#xB045; &#xB048; &#xB04A; &#xB04C; &#xB04E; &#xB053; &#xB054; &#xB055; &#xB057; &#xB059; &#xB05D; &#xB07C; &#xB07D; &#xB080; &#xB084; &#xB08C; 
+		&#xB08D; &#xB08F; &#xB091; &#xB098; &#xB099; &#xB09A; &#xB09C; &#xB09F; &#xB0A0; &#xB0A1; &#xB0A2; &#xB0A8; &#xB0A9; &#xB0AB; &#xB0AC; &#xB0AD; 
+		&#xB0AE; &#xB0AF; &#xB0B1; &#xB0B3; &#xB0B4; &#xB0B5; &#xB0B8; &#xB0BC; &#xB0C4; &#xB0C5; &#xB0C7; &#xB0C8; &#xB0C9; &#xB0D0; &#xB0D1; &#xB0D4; 
+		&#xB0D8; &#xB0E0; &#xB0E5; &#xB108; &#xB109; &#xB10B; &#xB10C; &#xB110; &#xB112; &#xB113; &#xB118; &#xB119; &#xB11B; &#xB11C; &#xB11D; &#xB123; 
+		&#xB124; &#xB125; &#xB128; &#xB12C; &#xB134; &#xB135; &#xB137; &#xB138; &#xB139; &#xB140; &#xB141; &#xB144; &#xB148; &#xB150; &#xB151; &#xB154; 
+		&#xB155; &#xB158; &#xB15C; &#xB160; &#xB178; &#xB179; &#xB17C; &#xB180; &#xB182; &#xB188; &#xB189; &#xB18B; &#xB18D; &#xB192; &#xB193; &#xB194; 
+		&#xB198; &#xB19C; &#xB1A8; &#xB1CC; &#xB1D0; &#xB1D4; &#xB1DC; &#xB1DD; &#xB1DF; &#xB1E8; &#xB1E9; &#xB1EC; &#xB1F0; &#xB1F9; &#xB1FB; &#xB1FD; 
+		&#xB204; &#xB205; &#xB208; &#xB20B; &#xB20C; &#xB214; &#xB215; &#xB217; &#xB219; &#xB220; &#xB234; &#xB23C; &#xB258; &#xB25C; &#xB260; &#xB268; 
+		&#xB269; &#xB274; &#xB275; &#xB27C; &#xB284; &#xB285; &#xB289; &#xB290; &#xB291; &#xB294; &#xB298; &#xB299; &#xB29A; &#xB2A0; &#xB2A1; &#xB2A3; 
+		&#xB2A5; &#xB2A6; &#xB2AA; &#xB2AC; &#xB2B0; &#xB2B4; &#xB2C8; &#xB2C9; &#xB2CC; &#xB2D0; &#xB2D2; &#xB2D8; &#xB2D9; &#xB2DB; &#xB2DD; &#xB2E2; 
+		&#xB2E4; &#xB2E5; &#xB2E6; &#xB2E8; &#xB2EB; &#xB2EC; &#xB2ED; &#xB2EE; &#xB2EF; &#xB2F3; &#xB2F4; &#xB2F5; &#xB2F7; &#xB2F8; &#xB2F9; &#xB2FA; 
+		&#xB2FB; &#xB2FF; &#xB300; &#xB301; &#xB304; &#xB308; &#xB310; &#xB311; &#xB313; &#xB314; &#xB315; &#xB31C; &#xB354; &#xB355; &#xB356; &#xB358; 
+		&#xB35B; &#xB35C; &#xB35E; &#xB35F; &#xB364; &#xB365; &#xB367; &#xB369; &#xB36B; &#xB36E; &#xB370; &#xB371; &#xB374; &#xB378; &#xB380; &#xB381; 
+		&#xB383; &#xB384; &#xB385; &#xB38C; &#xB390; &#xB394; &#xB3A0; &#xB3A1; &#xB3A8; &#xB3AC; &#xB3C4; &#xB3C5; &#xB3C8; &#xB3CB; &#xB3CC; &#xB3CE; 
+		&#xB3D0; &#xB3D4; &#xB3D5; &#xB3D7; &#xB3D9; &#xB3DB; &#xB3DD; &#xB3E0; &#xB3E4; &#xB3E8; &#xB3FC; &#xB410; &#xB418; &#xB41C; &#xB420; &#xB428; 
+		&#xB429; &#xB42B; &#xB434; &#xB450; &#xB451; &#xB454; &#xB458; &#xB460; &#xB461; &#xB463; &#xB465; &#xB46C; &#xB480; &#xB488; &#xB49D; &#xB4A4; 
+		&#xB4A8; &#xB4AC; &#xB4B5; &#xB4B7; &#xB4B9; &#xB4C0; &#xB4C4; &#xB4C8; &#xB4D0; &#xB4D5; &#xB4DC; &#xB4DD; &#xB4E0; &#xB4E3; &#xB4E4; &#xB4E6; 
+		&#xB4EC; &#xB4ED; &#xB4EF; &#xB4F1; &#xB4F8; &#xB514; &#xB515; &#xB518; &#xB51B; &#xB51C; &#xB524; &#xB525; &#xB527; &#xB528; &#xB529; &#xB52A; 
+		&#xB530; &#xB531; &#xB534; &#xB538; &#xB540; &#xB541; &#xB543; &#xB544; &#xB545; &#xB54B; &#xB54C; &#xB54D; &#xB550; &#xB554; &#xB55C; &#xB55D; 
+		&#xB55F; &#xB560; &#xB561; &#xB5A0; &#xB5A1; &#xB5A4; &#xB5A8; &#xB5AA; &#xB5AB; &#xB5B0; &#xB5B1; &#xB5B3; &#xB5B4; &#xB5B5; &#xB5BB; &#xB5BC; 
+		&#xB5BD; &#xB5C0; &#xB5C4; &#xB5CC; &#xB5CD; &#xB5CF; &#xB5D0; &#xB5D1; &#xB5D8; &#xB5EC; &#xB610; &#xB611; &#xB614; &#xB618; &#xB625; &#xB62C; 
+		&#xB634; &#xB648; &#xB664; &#xB668; &#xB69C; &#xB69D; &#xB6A0; &#xB6A4; &#xB6AB; &#xB6AC; &#xB6B1; &#xB6D4; &#xB6F0; &#xB6F4; &#xB6F8; &#xB700; 
+		&#xB701; &#xB705; &#xB728; &#xB729; &#xB72C; &#xB72F; &#xB730; &#xB738; &#xB739; &#xB73B; &#xB744; &#xB748; &#xB74C; &#xB754; &#xB755; &#xB760; 
+		&#xB764; &#xB768; &#xB770; &#xB771; &#xB773; &#xB775; &#xB77C; &#xB77D; &#xB780; &#xB784; &#xB78C; &#xB78D; &#xB78F; &#xB790; &#xB791; &#xB792; 
+		&#xB796; &#xB797; &#xB798; &#xB799; &#xB79C; &#xB7A0; &#xB7A8; &#xB7A9; &#xB7AB; &#xB7AC; &#xB7AD; &#xB7B4; &#xB7B5; &#xB7B8; &#xB7C7; &#xB7C9; 
+		&#xB7EC; &#xB7ED; &#xB7F0; &#xB7F4; &#xB7FC; &#xB7FD; &#xB7FF; &#xB800; &#xB801; &#xB807; &#xB808; &#xB809; &#xB80C; &#xB810; &#xB818; &#xB819; 
+		&#xB81B; &#xB81D; &#xB824; &#xB825; &#xB828; &#xB82C; &#xB834; &#xB835; &#xB837; &#xB838; &#xB839; &#xB840; &#xB844; &#xB851; &#xB853; &#xB85C; 
+		&#xB85D; &#xB860; &#xB864; &#xB86C; &#xB86D; &#xB86F; &#xB871; &#xB878; &#xB87C; &#xB88D; &#xB8A8; &#xB8B0; &#xB8B4; &#xB8B8; &#xB8C0; &#xB8C1; 
+		&#xB8C3; &#xB8C5; &#xB8CC; &#xB8D0; &#xB8D4; &#xB8DD; &#xB8DF; &#xB8E1; &#xB8E8; &#xB8E9; &#xB8EC; &#xB8F0; &#xB8F8; &#xB8F9; &#xB8FB; &#xB8FD; 
+		&#xB904; &#xB918; &#xB920; &#xB93C; &#xB93D; &#xB940; &#xB944; &#xB94C; &#xB94F; &#xB951; &#xB958; &#xB959; &#xB95C; &#xB960; &#xB968; &#xB969; 
+		&#xB96B; &#xB96D; &#xB974; &#xB975; &#xB978; &#xB97C; &#xB984; &#xB985; &#xB987; &#xB989; &#xB98A; &#xB98D; &#xB98E; &#xB9AC; &#xB9AD; &#xB9B0; 
+		&#xB9B4; &#xB9BC; &#xB9BD; &#xB9BF; &#xB9C1; &#xB9C8; &#xB9C9; &#xB9CC; &#xB9CE; &#xB9CF; &#xB9D0; &#xB9D1; &#xB9D2; &#xB9D8; &#xB9D9; &#xB9DB; 
+		&#xB9DD; &#xB9DE; &#xB9E1; &#xB9E3; &#xB9E4; &#xB9E5; &#xB9E8; &#xB9EC; &#xB9F4; &#xB9F5; &#xB9F7; &#xB9F8; &#xB9F9; &#xB9FA; &#xBA00; &#xBA01; 
+		&#xBA08; &#xBA15; &#xBA38; &#xBA39; &#xBA3C; &#xBA40; &#xBA42; &#xBA48; &#xBA49; &#xBA4B; &#xBA4D; &#xBA4E; &#xBA53; &#xBA54; &#xBA55; &#xBA58; 
+		&#xBA5C; &#xBA64; &#xBA65; &#xBA67; &#xBA68; &#xBA69; &#xBA70; &#xBA71; &#xBA74; &#xBA78; &#xBA83; &#xBA84; &#xBA85; &#xBA87; &#xBA8C; &#xBAA8; 
+		&#xBAA9; &#xBAAB; &#xBAAC; &#xBAB0; &#xBAB2; &#xBAB8; &#xBAB9; &#xBABB; &#xBABD; &#xBAC4; &#xBAC8; &#xBAD8; &#xBAD9; &#xBAFC; &#xBB00; &#xBB04; 
+		&#xBB0D; &#xBB0F; &#xBB11; &#xBB18; &#xBB1C; &#xBB20; &#xBB29; &#xBB2B; &#xBB34; &#xBB35; &#xBB36; &#xBB38; &#xBB3B; &#xBB3C; &#xBB3D; &#xBB3E; 
+		&#xBB44; &#xBB45; &#xBB47; &#xBB49; &#xBB4D; &#xBB4F; &#xBB50; &#xBB54; &#xBB58; &#xBB61; &#xBB63; &#xBB6C; &#xBB88; &#xBB8C; &#xBB90; &#xBBA4; 
+		&#xBBA8; &#xBBAC; &#xBBB4; &#xBBB7; &#xBBC0; &#xBBC4; &#xBBC8; &#xBBD0; &#xBBD3; &#xBBF8; &#xBBF9; &#xBBFC; &#xBBFF; &#xBC00; &#xBC02; &#xBC08; 
+		&#xBC09; &#xBC0B; &#xBC0C; &#xBC0D; &#xBC0F; &#xBC11; &#xBC14; &#xBC15; &#xBC16; &#xBC17; &#xBC18; &#xBC1B; &#xBC1C; &#xBC1D; &#xBC1E; &#xBC1F; 
+		&#xBC24; &#xBC25; &#xBC27; &#xBC29; &#xBC2D; &#xBC30; &#xBC31; &#xBC34; &#xBC38; &#xBC40; &#xBC41; &#xBC43; &#xBC44; &#xBC45; &#xBC49; &#xBC4C; 
+		&#xBC4D; &#xBC50; &#xBC5D; &#xBC84; &#xBC85; &#xBC88; &#xBC8B; &#xBC8C; &#xBC8E; &#xBC94; &#xBC95; &#xBC97; &#xBC99; &#xBC9A; &#xBCA0; &#xBCA1; 
+		&#xBCA4; &#xBCA7; &#xBCA8; &#xBCB0; &#xBCB1; &#xBCB3; &#xBCB4; &#xBCB5; &#xBCBC; &#xBCBD; &#xBCC0; &#xBCC4; &#xBCCD; &#xBCCF; &#xBCD0; &#xBCD1; 
+		&#xBCD5; &#xBCD8; &#xBCDC; &#xBCF4; &#xBCF5; &#xBCF6; &#xBCF8; &#xBCFC; &#xBD04; &#xBD05; &#xBD07; &#xBD09; &#xBD10; &#xBD14; &#xBD24; &#xBD2C; 
+		&#xBD40; &#xBD48; &#xBD49; &#xBD4C; &#xBD50; &#xBD58; &#xBD59; &#xBD64; &#xBD68; &#xBD80; &#xBD81; &#xBD84; &#xBD87; &#xBD88; &#xBD89; &#xBD8A; 
+		&#xBD90; &#xBD91; &#xBD93; &#xBD95; &#xBD99; &#xBD9A; &#xBD9C; &#xBDA4; &#xBDB0; &#xBDB8; &#xBDD4; &#xBDD5; &#xBDD8; &#xBDDC; &#xBDE9; &#xBDF0; 
+		&#xBDF4; &#xBDF8; &#xBE00; &#xBE03; &#xBE05; &#xBE0C; &#xBE0D; &#xBE10; &#xBE14; &#xBE1C; &#xBE1D; &#xBE1F; &#xBE44; &#xBE45; &#xBE48; &#xBE4C; 
+		&#xBE4E; &#xBE54; &#xBE55; &#xBE57; &#xBE59; &#xBE5A; &#xBE5B; &#xBE60; &#xBE61; &#xBE64; &#xBE68; &#xBE6A; &#xBE70; &#xBE71; &#xBE73; &#xBE74; 
+		&#xBE75; &#xBE7B; &#xBE7C; &#xBE7D; &#xBE80; &#xBE84; &#xBE8C; &#xBE8D; &#xBE8F; &#xBE90; &#xBE91; &#xBE98; &#xBE99; &#xBEA8; &#xBED0; &#xBED1; 
+		&#xBED4; &#xBED7; &#xBED8; &#xBEE0; &#xBEE3; &#xBEE4; &#xBEE5; &#xBEEC; &#xBF01; &#xBF08; &#xBF09; &#xBF18; &#xBF19; &#xBF1B; &#xBF1C; &#xBF1D; 
+		&#xBF40; &#xBF41; &#xBF44; &#xBF48; &#xBF50; &#xBF51; &#xBF55; &#xBF94; &#xBFB0; &#xBFC5; &#xBFCC; &#xBFCD; &#xBFD0; &#xBFD4; &#xBFDC; &#xBFDF; 
+		&#xBFE1; &#xC03C; &#xC051; &#xC058; &#xC05C; &#xC060; &#xC068; &#xC069; &#xC090; &#xC091; &#xC094; &#xC098; &#xC0A0; &#xC0A1; &#xC0A3; &#xC0A5; 
+		&#xC0AC; &#xC0AD; &#xC0AF; &#xC0B0; &#xC0B3; &#xC0B4; &#xC0B5; &#xC0B6; &#xC0BC; &#xC0BD; &#xC0BF; &#xC0C0; &#xC0C1; &#xC0C5; &#xC0C8; &#xC0C9; 
+		&#xC0CC; &#xC0D0; &#xC0D8; &#xC0D9; &#xC0DB; &#xC0DC; &#xC0DD; &#xC0E4; &#xC0E5; &#xC0E8; &#xC0EC; &#xC0F4; &#xC0F5; &#xC0F7; &#xC0F9; &#xC100; 
+		&#xC104; &#xC108; &#xC110; &#xC115; &#xC11C; &#xC11D; &#xC11E; &#xC11F; &#xC120; &#xC123; &#xC124; &#xC126; &#xC127; &#xC12C; &#xC12D; &#xC12F; 
+		&#xC130; &#xC131; &#xC136; &#xC138; &#xC139; &#xC13C; &#xC140; &#xC148; &#xC149; &#xC14B; &#xC14C; &#xC14D; &#xC154; &#xC155; &#xC158; &#xC15C; 
+		&#xC164; &#xC165; &#xC167; &#xC168; &#xC169; &#xC170; &#xC174; &#xC178; &#xC185; &#xC18C; &#xC18D; &#xC18E; &#xC190; &#xC194; &#xC196; &#xC19C; 
+		&#xC19D; &#xC19F; &#xC1A1; &#xC1A5; &#xC1A8; &#xC1A9; &#xC1AC; &#xC1B0; &#xC1BD; &#xC1C4; &#xC1C8; &#xC1CC; &#xC1D4; &#xC1D7; &#xC1D8; &#xC1E0; 
+		&#xC1E4; &#xC1E8; &#xC1F0; &#xC1F1; &#xC1F3; &#xC1FC; &#xC1FD; &#xC200; &#xC204; &#xC20C; &#xC20D; &#xC20F; &#xC211; &#xC218; &#xC219; &#xC21C; 
+		&#xC21F; &#xC220; &#xC228; &#xC229; &#xC22B; &#xC22D; &#xC22F; &#xC231; &#xC232; &#xC234; &#xC248; &#xC250; &#xC251; &#xC254; &#xC258; &#xC260; 
+		&#xC265; &#xC26C; &#xC26D; &#xC270; &#xC274; &#xC27C; &#xC27D; &#xC27F; &#xC281; &#xC288; &#xC289; &#xC290; &#xC298; &#xC29B; &#xC29D; &#xC2A4; 
+		&#xC2A5; &#xC2A8; &#xC2AC; &#xC2AD; &#xC2B4; &#xC2B5; &#xC2B7; &#xC2B9; &#xC2DC; &#xC2DD; &#xC2E0; &#xC2E3; &#xC2E4; &#xC2EB; &#xC2EC; &#xC2ED; 
+		&#xC2EF; &#xC2F1; &#xC2F6; &#xC2F8; &#xC2F9; &#xC2FB; &#xC2FC; &#xC300; &#xC308; &#xC309; &#xC30C; &#xC30D; &#xC313; &#xC314; &#xC315; &#xC318; 
+		&#xC31C; &#xC324; &#xC325; &#xC328; &#xC329; &#xC345; &#xC368; &#xC369; &#xC36C; &#xC370; &#xC372; &#xC378; &#xC379; &#xC37C; &#xC37D; &#xC384; 
+		&#xC388; &#xC38C; &#xC3C0; &#xC3D8; &#xC3D9; &#xC3DC; &#xC3DF; &#xC3E0; &#xC3E2; &#xC3E8; &#xC3E9; &#xC3ED; &#xC3F4; &#xC3F5; &#xC3F8; &#xC408; 
+		&#xC410; &#xC424; &#xC42C; &#xC430; &#xC434; &#xC43C; &#xC43D; &#xC448; &#xC464; &#xC465; &#xC468; &#xC46C; &#xC474; &#xC475; &#xC479; &#xC480; 
+		&#xC494; &#xC49C; &#xC4B8; &#xC4BC; &#xC4E9; &#xC4F0; &#xC4F1; &#xC4F4; &#xC4F8; &#xC4FA; &#xC4FF; &#xC500; &#xC501; &#xC50C; &#xC510; &#xC514; 
+		&#xC51C; &#xC528; &#xC529; &#xC52C; &#xC530; &#xC538; &#xC539; &#xC53B; &#xC53D; &#xC544; &#xC545; &#xC548; &#xC549; &#xC54A; &#xC54C; &#xC54D; 
+		&#xC54E; &#xC553; &#xC554; &#xC555; &#xC557; &#xC558; &#xC559; &#xC55D; &#xC55E; &#xC560; &#xC561; &#xC564; &#xC568; &#xC570; &#xC571; &#xC573; 
+		&#xC574; &#xC575; &#xC57C; &#xC57D; &#xC580; &#xC584; &#xC587; &#xC58C; &#xC58D; &#xC58F; &#xC591; &#xC595; &#xC597; &#xC598; &#xC59C; &#xC5A0; 
+		&#xC5A9; &#xC5B4; &#xC5B5; &#xC5B8; &#xC5B9; &#xC5BB; &#xC5BC; &#xC5BD; &#xC5BE; &#xC5C4; &#xC5C5; &#xC5C6; &#xC5C7; &#xC5C8; &#xC5C9; &#xC5CA; 
+		&#xC5CC; &#xC5CE; &#xC5D0; &#xC5D1; &#xC5D4; &#xC5D8; &#xC5E0; &#xC5E1; &#xC5E3; &#xC5E5; &#xC5EC; &#xC5ED; &#xC5EE; &#xC5F0; &#xC5F4; &#xC5F6; 
+		&#xC5F7; &#xC5FC; &#xC5FD; &#xC5FE; &#xC5FF; &#xC600; &#xC601; &#xC605; &#xC606; &#xC607; &#xC608; &#xC60C; &#xC610; &#xC618; &#xC619; &#xC61B; 
+		&#xC61C; &#xC624; &#xC625; &#xC628; &#xC62C; &#xC62D; &#xC62E; &#xC630; &#xC633; &#xC634; &#xC635; &#xC637; &#xC639; &#xC63B; &#xC640; &#xC641; 
+		&#xC644; &#xC648; &#xC650; &#xC651; &#xC653; &#xC654; &#xC655; &#xC65C; &#xC65D; &#xC660; &#xC66C; &#xC66F; &#xC671; &#xC678; &#xC679; &#xC67C; 
+		&#xC680; &#xC688; &#xC689; &#xC68B; &#xC68D; &#xC694; &#xC695; &#xC698; &#xC69C; &#xC6A4; &#xC6A5; &#xC6A7; &#xC6A9; &#xC6B0; &#xC6B1; &#xC6B4; 
+		&#xC6B8; &#xC6B9; &#xC6BA; &#xC6C0; &#xC6C1; &#xC6C3; &#xC6C5; &#xC6CC; &#xC6CD; &#xC6D0; &#xC6D4; &#xC6DC; &#xC6DD; &#xC6E0; &#xC6E1; &#xC6E8; 
+		&#xC6E9; &#xC6EC; &#xC6F0; &#xC6F8; &#xC6F9; &#xC6FD; &#xC704; &#xC705; &#xC708; &#xC70C; &#xC714; &#xC715; &#xC717; &#xC719; &#xC720; &#xC721; 
+		&#xC724; &#xC728; &#xC730; &#xC731; &#xC733; &#xC735; &#xC737; &#xC73C; &#xC73D; &#xC740; &#xC744; &#xC74A; &#xC74C; &#xC74D; &#xC74F; &#xC751; 
+		&#xC752; &#xC753; &#xC754; &#xC755; &#xC756; &#xC757; &#xC758; &#xC75C; &#xC760; &#xC768; &#xC76B; &#xC774; &#xC775; &#xC778; &#xC77C; &#xC77D; 
+		&#xC77E; &#xC783; &#xC784; &#xC785; &#xC787; &#xC788; &#xC789; &#xC78A; &#xC78E; &#xC790; &#xC791; &#xC794; &#xC796; &#xC797; &#xC798; &#xC79A; 
+		&#xC7A0; &#xC7A1; &#xC7A3; &#xC7A4; &#xC7A5; &#xC7A6; &#xC7AC; &#xC7AD; &#xC7B0; &#xC7B4; &#xC7BC; &#xC7BD; &#xC7BF; &#xC7C0; &#xC7C1; &#xC7C8; 
+		&#xC7C9; &#xC7CC; &#xC7CE; &#xC7D0; &#xC7D8; &#xC7DD; &#xC7E4; &#xC7E8; &#xC7EC; &#xC800; &#xC801; &#xC804; &#xC808; &#xC80A; &#xC810; &#xC811; 
+		&#xC813; &#xC815; &#xC816; &#xC81C; &#xC81D; &#xC820; &#xC824; &#xC82C; &#xC82D; &#xC82F; &#xC831; &#xC838; &#xC83C; &#xC840; &#xC848; &#xC849; 
+		&#xC84C; &#xC84D; &#xC854; &#xC870; &#xC871; &#xC874; &#xC878; &#xC87A; &#xC880; &#xC881; &#xC883; &#xC885; &#xC886; &#xC887; &#xC88B; &#xC88C; 
+		&#xC88D; &#xC894; &#xC89D; &#xC89F; &#xC8A1; &#xC8A8; &#xC8BC; &#xC8BD; &#xC8C4; &#xC8C8; &#xC8CC; &#xC8D4; &#xC8D5; &#xC8D7; &#xC8D9; &#xC8E0; 
+		&#xC8E1; &#xC8E4; &#xC8F5; &#xC8FC; &#xC8FD; &#xC900; &#xC904; &#xC905; &#xC906; &#xC90C; &#xC90D; &#xC90F; &#xC911; &#xC918; &#xC92C; &#xC934; 
+		&#xC950; &#xC951; &#xC954; &#xC958; &#xC960; &#xC961; &#xC963; &#xC96C; &#xC970; &#xC974; &#xC97C; &#xC988; &#xC989; &#xC98C; &#xC990; &#xC998; 
+		&#xC999; &#xC99B; &#xC99D; &#xC9C0; &#xC9C1; &#xC9C4; &#xC9C7; &#xC9C8; &#xC9CA; &#xC9D0; &#xC9D1; &#xC9D3; &#xC9D5; &#xC9D6; &#xC9D9; &#xC9DA; 
+		&#xC9DC; &#xC9DD; &#xC9E0; &#xC9E2; &#xC9E4; &#xC9E7; &#xC9EC; &#xC9ED; &#xC9EF; &#xC9F0; &#xC9F1; &#xC9F8; &#xC9F9; &#xC9FC; &#xCA00; &#xCA08; 
+		&#xCA09; &#xCA0B; &#xCA0C; &#xCA0D; &#xCA14; &#xCA18; &#xCA29; &#xCA4C; &#xCA4D; &#xCA50; &#xCA54; &#xCA5C; &#xCA5D; &#xCA5F; &#xCA60; &#xCA61; 
+		&#xCA68; &#xCA7D; &#xCA84; &#xCA98; &#xCABC; &#xCABD; &#xCAC0; &#xCAC4; &#xCACC; &#xCACD; &#xCACF; &#xCAD1; &#xCAD3; &#xCAD8; &#xCAD9; &#xCAE0; 
+		&#xCAEC; &#xCAF4; &#xCB08; &#xCB10; &#xCB14; &#xCB18; &#xCB20; &#xCB21; &#xCB41; &#xCB48; &#xCB49; &#xCB4C; &#xCB50; &#xCB58; &#xCB59; &#xCB5D; 
+		&#xCB64; &#xCB78; &#xCB79; &#xCB9C; &#xCBB8; &#xCBD4; &#xCBE4; &#xCBE7; &#xCBE9; &#xCC0C; &#xCC0D; &#xCC10; &#xCC14; &#xCC1C; &#xCC1D; &#xCC21; 
+		&#xCC22; &#xCC27; &#xCC28; &#xCC29; &#xCC2C; &#xCC2E; &#xCC30; &#xCC38; &#xCC39; &#xCC3B; &#xCC3C; &#xCC3D; &#xCC3E; &#xCC44; &#xCC45; &#xCC48; 
+		&#xCC4C; &#xCC54; &#xCC55; &#xCC57; &#xCC58; &#xCC59; &#xCC60; &#xCC64; &#xCC66; &#xCC68; &#xCC70; &#xCC75; &#xCC98; &#xCC99; &#xCC9C; &#xCCA0; 
+		&#xCCA8; &#xCCA9; &#xCCAB; &#xCCAC; &#xCCAD; &#xCCB4; &#xCCB5; &#xCCB8; &#xCCBC; &#xCCC4; &#xCCC5; &#xCCC7; &#xCCC9; &#xCCD0; &#xCCD4; &#xCCE4; 
+		&#xCCEC; &#xCCF0; &#xCD01; &#xCD08; &#xCD09; &#xCD0C; &#xCD10; &#xCD18; &#xCD19; &#xCD1B; &#xCD1D; &#xCD24; &#xCD28; &#xCD2C; &#xCD39; &#xCD5C; 
+		&#xCD60; &#xCD64; &#xCD6C; &#xCD6D; &#xCD6F; &#xCD71; &#xCD78; &#xCD88; &#xCD94; &#xCD95; &#xCD98; &#xCD9C; &#xCDA4; &#xCDA5; &#xCDA7; &#xCDA9; 
+		&#xCDB0; &#xCDC4; &#xCDCC; &#xCDD0; &#xCDE8; &#xCDEC; &#xCDF0; &#xCDF8; &#xCDF9; &#xCDFB; &#xCDFD; &#xCE04; &#xCE08; &#xCE0C; &#xCE14; &#xCE19; 
+		&#xCE20; &#xCE21; &#xCE24; &#xCE28; &#xCE30; &#xCE31; &#xCE33; &#xCE35; &#xCE58; &#xCE59; &#xCE5C; &#xCE5F; &#xCE60; &#xCE61; &#xCE68; &#xCE69; 
+		&#xCE6B; &#xCE6D; &#xCE74; &#xCE75; &#xCE78; &#xCE7C; &#xCE84; &#xCE85; &#xCE87; &#xCE89; &#xCE90; &#xCE91; &#xCE94; &#xCE98; &#xCEA0; &#xCEA1; 
+		&#xCEA3; &#xCEA4; &#xCEA5; &#xCEAC; &#xCEAD; &#xCEC1; &#xCEE4; &#xCEE5; &#xCEE8; &#xCEEB; &#xCEEC; &#xCEF4; &#xCEF5; &#xCEF7; &#xCEF8; &#xCEF9; 
+		&#xCF00; &#xCF01; &#xCF04; &#xCF08; &#xCF10; &#xCF11; &#xCF13; &#xCF15; &#xCF1C; &#xCF20; &#xCF24; &#xCF2C; &#xCF2D; &#xCF2F; &#xCF30; &#xCF31; 
+		&#xCF38; &#xCF54; &#xCF55; &#xCF58; &#xCF5C; &#xCF64; &#xCF65; &#xCF67; &#xCF69; &#xCF70; &#xCF71; &#xCF74; &#xCF78; &#xCF80; &#xCF85; &#xCF8C; 
+		&#xCFA1; &#xCFA8; &#xCFB0; &#xCFC4; &#xCFE0; &#xCFE1; &#xCFE4; &#xCFE8; &#xCFF0; &#xCFF1; &#xCFF3; &#xCFF5; &#xCFFC; &#xD000; &#xD004; &#xD011; 
+		&#xD018; &#xD02D; &#xD034; &#xD035; &#xD038; &#xD03C; &#xD044; &#xD045; &#xD047; &#xD049; &#xD050; &#xD054; &#xD058; &#xD060; &#xD06C; &#xD06D; 
+		&#xD070; &#xD074; &#xD07C; &#xD07D; &#xD081; &#xD0A4; &#xD0A5; &#xD0A8; &#xD0AC; &#xD0B4; &#xD0B5; &#xD0B7; &#xD0B9; &#xD0C0; &#xD0C1; &#xD0C4; 
+		&#xD0C8; &#xD0C9; &#xD0D0; &#xD0D1; &#xD0D3; &#xD0D4; &#xD0D5; &#xD0DC; &#xD0DD; &#xD0E0; &#xD0E4; &#xD0EC; &#xD0ED; &#xD0EF; &#xD0F0; &#xD0F1; 
+		&#xD0F8; &#xD10D; &#xD130; &#xD131; &#xD134; &#xD138; &#xD13A; &#xD140; &#xD141; &#xD143; &#xD144; &#xD145; &#xD14C; &#xD14D; &#xD150; &#xD154; 
+		&#xD15C; &#xD15D; &#xD15F; &#xD161; &#xD168; &#xD16C; &#xD17C; &#xD184; &#xD188; &#xD1A0; &#xD1A1; &#xD1A4; &#xD1A8; &#xD1B0; &#xD1B1; &#xD1B3; 
+		&#xD1B5; &#xD1BA; &#xD1BC; &#xD1C0; &#xD1D8; &#xD1F4; &#xD1F8; &#xD207; &#xD209; &#xD210; &#xD22C; &#xD22D; &#xD230; &#xD234; &#xD23C; &#xD23D; 
+		&#xD23F; &#xD241; &#xD248; &#xD25C; &#xD264; &#xD280; &#xD281; &#xD284; &#xD288; &#xD290; &#xD291; &#xD295; &#xD29C; &#xD2A0; &#xD2A4; &#xD2AC; 
+		&#xD2B1; &#xD2B8; &#xD2B9; &#xD2BC; &#xD2BF; &#xD2C0; &#xD2C2; &#xD2C8; &#xD2C9; &#xD2CB; &#xD2D4; &#xD2D8; &#xD2DC; &#xD2E4; &#xD2E5; &#xD2F0; 
+		&#xD2F1; &#xD2F4; &#xD2F8; &#xD300; &#xD301; &#xD303; &#xD305; &#xD30C; &#xD30D; &#xD30E; &#xD310; &#xD314; &#xD316; &#xD31C; &#xD31D; &#xD31F; 
+		&#xD320; &#xD321; &#xD325; &#xD328; &#xD329; &#xD32C; &#xD330; &#xD338; &#xD339; &#xD33B; &#xD33C; &#xD33D; &#xD344; &#xD345; &#xD37C; &#xD37D; 
+		&#xD380; &#xD384; &#xD38C; &#xD38D; &#xD38F; &#xD390; &#xD391; &#xD398; &#xD399; &#xD39C; &#xD3A0; &#xD3A8; &#xD3A9; &#xD3AB; &#xD3AD; &#xD3B4; 
+		&#xD3B8; &#xD3BC; &#xD3C4; &#xD3C5; &#xD3C8; &#xD3C9; &#xD3D0; &#xD3D8; &#xD3E1; &#xD3E3; &#xD3EC; &#xD3ED; &#xD3F0; &#xD3F4; &#xD3FC; &#xD3FD; 
+		&#xD3FF; &#xD401; &#xD408; &#xD41D; &#xD440; &#xD444; &#xD45C; &#xD460; &#xD464; &#xD46D; &#xD46F; &#xD478; &#xD479; &#xD47C; &#xD47F; &#xD480; 
+		&#xD482; &#xD488; &#xD489; &#xD48B; &#xD48D; &#xD494; &#xD4A9; &#xD4CC; &#xD4D0; &#xD4D4; &#xD4DC; &#xD4DF; &#xD4E8; &#xD4EC; &#xD4F0; &#xD4F8; 
+		&#xD4FB; &#xD4FD; &#xD504; &#xD508; &#xD50C; &#xD514; &#xD515; &#xD517; &#xD53C; &#xD53D; &#xD540; &#xD544; &#xD54C; &#xD54D; &#xD54F; &#xD551; 
+		&#xD558; &#xD559; &#xD55C; &#xD560; &#xD565; &#xD568; &#xD569; &#xD56B; &#xD56D; &#xD574; &#xD575; &#xD578; &#xD57C; &#xD584; &#xD585; &#xD587; 
+		&#xD588; &#xD589; &#xD590; &#xD5A5; &#xD5C8; &#xD5C9; &#xD5CC; &#xD5D0; &#xD5D2; &#xD5D8; &#xD5D9; &#xD5DB; &#xD5DD; &#xD5E4; &#xD5E5; &#xD5E8; 
+		&#xD5EC; &#xD5F4; &#xD5F5; &#xD5F7; &#xD5F9; &#xD600; &#xD601; &#xD604; &#xD608; &#xD610; &#xD611; &#xD613; &#xD614; &#xD615; &#xD61C; &#xD620; 
+		&#xD624; &#xD62D; &#xD638; &#xD639; &#xD63C; &#xD640; &#xD645; &#xD648; &#xD649; &#xD64B; &#xD64D; &#xD651; &#xD654; &#xD655; &#xD658; &#xD65C; 
+		&#xD667; &#xD669; &#xD670; &#xD671; &#xD674; &#xD683; &#xD685; &#xD68C; &#xD68D; &#xD690; &#xD694; &#xD69D; &#xD69F; &#xD6A1; &#xD6A8; &#xD6AC; 
+		&#xD6B0; &#xD6B9; &#xD6BB; &#xD6C4; &#xD6C5; &#xD6C8; &#xD6CC; &#xD6D1; &#xD6D4; &#xD6D7; &#xD6D9; &#xD6E0; &#xD6E4; &#xD6E8; &#xD6F0; &#xD6F5; 
+		&#xD6FC; &#xD6FD; &#xD700; &#xD704; &#xD711; &#xD718; &#xD719; &#xD71C; &#xD720; &#xD728; &#xD729; &#xD72B; &#xD72D; &#xD734; &#xD735; &#xD738; 
+		&#xD73C; &#xD744; &#xD747; &#xD749; &#xD750; &#xD751; &#xD754; &#xD756; &#xD757; &#xD758; &#xD759; &#xD760; &#xD761; &#xD763; &#xD765; &#xD769; 
+		&#xD76C; &#xD770; &#xD774; &#xD77C; &#xD77D; &#xD781; &#xD788; &#xD789; &#xD78C; &#xD790; &#xD798; &#xD799; &#xD79B; &#xD79D; <null/>  <null/>  
+		
+		<!-- Append 5 characters -->
+		&#xB894; &#xC330; &#xC3BC; &#xC4D4; &#xCB2C; <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  
+
+		<!-- CTR append new symbol -->
+		<null/>  <null/>  &#x2662; <null/>  <null/>  <null/>  &#x2666; <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  
+		&#x2776; &#x2777; &#x2778; &#x2779; &#x277A; &#x277B; &#x277C; &#x277D; &#x277E; <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  
+
+		<!-- WARNING: FOR DEVELOPERS ONLY. Do not use characters in this group for user input strings. -->
+		&#x22EF; <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  <null/>  
+
+
+		</order>
+	</body>
+</letter-order>
+<!-- 更新履歴 []内はnullを除いた延べ収録文字数
+
+  2010/04/15  xlor[kr] for CTR ver 1
+              TWLのKR向けxlorをベースとして作成
+              [???chars]
+
+  2010/05/15  ver 2
+              CTR外字追加
+              asciiなどの文字が実体で記述されていた部分を
+              <sp/>を除いて数値文字参照に変更
+              NoE要求につき欧州追加文字カテゴリを追加
+              トランプ記号、丸囲み記号、三点リーダ追加
+              [3810chars]
+
+  2010/06/07  ver 3
+              CTR外字のうち不要になった17字(U+E07F-E08F)の領域削除
+              欧州追加文字に U+0110 を追加
+              多言語で同時に収録された U+0111に関しては
+              Hangul Symbol枠で既に持っていたため、
+              それを欧州追加文字カテゴリへ移動
+              [3794chars]
+
+  2010/07/12  ver 4
+              別リージョンに含まれている U+3005(々)を互換領域に追加
+              [3795chars]
+
+　2011/01/07  ver 4
+              fontConverterに組み込みのためヘッダの名前をファイル名と統一
+              [3795chars]
+-->
+
