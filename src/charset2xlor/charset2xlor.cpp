@@ -1,12 +1,12 @@
 #include <sdw.h>
 
-int main(int argc, char* argv[])
+int UMain(int argc, UChar* argv[])
 {
 	if (argc != 3)
 	{
 		return 1;
 	}
-	FILE* fp = fopen(argv[1], "rb");
+	FILE* fp = UFopen(argv[1], USTR("rb"), false);
 	if (fp == nullptr)
 	{
 		return 1;
@@ -41,13 +41,13 @@ int main(int argc, char* argv[])
 			vCharset.push_back(uUnicode);
 		}
 	}
-	string sTitle = AToU8(argv[2]);
+	string sTitle = UToU8(argv[2]);
 	string::size_type uPos = sTitle.find_last_of("/\\");
 	if (uPos != string::npos)
 	{
 		sTitle = sTitle.substr(uPos + 1);
 	}
-	fp = fopen(argv[2], "wb");
+	fp = UFopen(argv[2], USTR("wb"), false);
 	if (fp == nullptr)
 	{
 		return 1;

@@ -194,35 +194,22 @@ int main(int argc, char* argv[])
 	{
 		return 1;
 	}
-	fwrite("\xEF\xBB\xBF", 3, 1, fp);
+	fwrite("\xFF\xFE", 2, 1, fp);
 	for (int i = 0; i <= nLastIndex; i++)
 	{
 		if (nIndexedCode[i] == 0)
 		{
-			fprintf(fp, " ");
-		}
-		else if (nIndexedCode[i] < 0x80)
-		{
-			fprintf(fp, "%c", nIndexedCode[i]);
-		}
-		else if (nIndexedCode[i] < 0x800)
-		{
-			u8 uUTF8[2] = {};
-			uUTF8[0] = 0xC0 | (nIndexedCode[i] >> 6 & 0x1F);
-			uUTF8[1] = 0x80 | (nIndexedCode[i] & 0x3F);
-			fwrite(uUTF8, 2, 1, fp);
+			static u16 uSpace = 0x20;
+			fwrite(&uSpace, 2, 1, fp);
 		}
 		else
 		{
-			u8 uUTF8[3] = {};
-			uUTF8[0] = 0xE0 | (nIndexedCode[i] >> 12 & 0xF);
-			uUTF8[1] = 0x80 | (nIndexedCode[i] >> 6 & 0x3F);
-			uUTF8[2] = 0x80 | (nIndexedCode[i] & 0x3F);
-			fwrite(uUTF8, 3, 1, fp);
+			fwrite(nIndexedCode + i, 2, 1, fp);
 		}
 		if ((i & 0xF) == 0xF)
 		{
-			fprintf(fp, "\r\n");
+			u32 uCRLF = CONVERT_ENDIAN(0x0D000A00);
+			fwrite(&uCRLF, 4, 1, fp);
 		}
 	}
 	fclose(fp);
