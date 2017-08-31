@@ -12,6 +12,17 @@ bcfnt2charset font.bcfnt charset.txt
 bffnt2charset font.bffnt charset.txt
 ~~~
 
+- mergecharset
+~~~
+mergecharset output_charset.txt input_charset_1.txt input_charset_2.txt ... input_charset_n.txt
+or
+mergecharset output_charset.txt input_charset_1.txt
+mergecharset output_charset.txt output_charset.txt input_charset_2.txt
+mergecharset output_charset.txt output_charset.txt input_charset_3.txt
+...
+mergecharset output_charset.txt output_charset.txt input_charset_n.txt
+~~~
+
 - charset2xlor
 ~~~
 charset2xlor charset.txt font.xlor
