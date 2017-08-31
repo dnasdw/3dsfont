@@ -1,73 +1,53 @@
-#include <utility.h>
+#include <sdw.h>
 
-int main(int argc, char* argv[])
+int UMain(int argc, UChar* argv[])
 {
-	u16 nLetter[0x10000] = {};
-	nLetter[0x20] = 1;
 	if (argc != 3)
 	{
 		return 1;
 	}
-	FILE* fp = fopen(argv[1], "rb");
+	FILE* fp = UFopen(argv[1], USTR("rb"), false);
 	if (fp == nullptr)
 	{
 		return 1;
 	}
 	fseek(fp, 0, SEEK_END);
-	int charsetSize = ftell(fp);
+	u32 uTxtSize = ftell(fp);
+	if (uTxtSize % 2 != 0)
+	{
+		fclose(fp);
+		return 1;
+	}
+	uTxtSize /= 2;
 	fseek(fp, 0, SEEK_SET);
-	u8* pCharset = new u8[charsetSize];
-	fread(pCharset, 1, charsetSize, fp);
+	Char16_t* pTemp = new Char16_t[uTxtSize + 1];
+	fread(pTemp, 2, uTxtSize, fp);
 	fclose(fp);
-	int nIndex = 0;
-	if (charsetSize >= 3 && memcmp(pCharset, "\xEF\xBB\xBF", 3) == 0)
+	if (pTemp[0] != 0xFEFF)
 	{
-		nIndex = 3;
+		delete[] pTemp;
+		return 1;
 	}
-	for (int i = nIndex; i < charsetSize; i++)
+	pTemp[uTxtSize] = 0;
+	U16String sTxt = pTemp + 1;
+	delete[] pTemp;
+	set<Char16_t> sCharset;
+	sCharset.insert(0x20);
+	for (u32 i = 0; i < static_cast<u32>(sTxt.size()); i++)
 	{
-		u8* pUTF8 = pCharset + i;
-		if (pUTF8[0] == 0 || pUTF8[0] > 0xEF)
+		Char16_t uUnicode = sTxt[i];
+		if (uUnicode >= 0x20)
 		{
-			delete[] pCharset;
-			return 1;
-		}
-		else if (pUTF8[0] >= 0xE0)
-		{
-			nLetter[(pUTF8[0] << 12 & 0xF000) | (pUTF8[1] << 6 & 0xFC0) | (pUTF8[2] & 0x3F)] = 1;
-			i += 2;
-		}
-		else if (pUTF8[0] >= 0xC0)
-		{
-			nLetter[(pUTF8[0] << 6 & 0x7C0) | (pUTF8[1] & 0x3F)] = 1;
-			i++;
-		}
-		else if (pUTF8[0] >= 0x80)
-		{
-			delete[] pCharset;
-			return 1;
-		}
-		else if (pUTF8[0] >= 0x20)
-		{
-			nLetter[pUTF8[0]] = 1;
+			sCharset.insert(uUnicode);
 		}
 	}
-	delete[] pCharset;
-	const char* pName = strrchr(argv[2], '/');
-	if (pName != nullptr)
+	string sTitle = UToU8(argv[2]);
+	string::size_type uPos = sTitle.find_last_of("/\\");
+	if (uPos != string::npos)
 	{
-		pName++;
+		sTitle = sTitle.substr(uPos + 1);
 	}
-	else
-	{
-		pName = argv[2];
-	}
-	const char* pName2 = strrchr(argv[2], '\\');
-	if (pName2 > pName)
-	{
-		pName = pName2 + 1;
-	}
-	fp = fopen(argv[2], "wb");
+	fp = UFopen(argv[2], USTR("wb"), false);
 	if (fp == nullptr)
 	{
 		return 1;
@@ -77,34 +57,33 @@ int main(int argc, char* argv[])
 	fprintf(fp, "\r\n");
 	fprintf(fp, "<letter-list version=\"1.0\">\r\n");
 	fprintf(fp, "	<head>\r\n");
-	fprintf(fp, "		<create user=\"dnasdw\" date=\"2014-12-09\"/>\r\n");
-	fprintf(fp, "		<title>%s</title>\r\n", pName);
+	fprintf(fp, "		<create user=\"\" date=\"2014-12-09\" />\r\n");
+	fprintf(fp, "		<title>%s</title>\r\n", sTitle.c_str());
 	fprintf(fp, "		<comment></comment>\r\n");
 	fprintf(fp, "	</head>\r\n");
 	fprintf(fp, "\r\n");
 	fprintf(fp, "	<body>\r\n");
 	fprintf(fp, "		<letter>\r\n");
-	int nCount = 0;
-	for (int i = 0x20; i < 0x10000; i++)
+	n32 nIndex = 0;
+	for (set<Char16_t>::iterator it = sCharset.begin(); it != sCharset.end(); ++it)
 	{
-		if (nLetter[i] != 0)
+		Char16_t uUnicode = *it;
+		if (nIndex % 16 == 0)
 		{
-			if (nCount++ % 16 == 0)
-			{
-				fprintf(fp, "		");
-			}
-			if (i == 0x20)
-			{
-				fprintf(fp, "<sp/> ");
-			}
-			else
-			{
-				fprintf(fp, "&#x%04X; ", i);
-			}
-			if (nCount % 16 == 0)
-			{
-				fprintf(fp, "\r\n");
-			}
+			fprintf(fp, "		");
+		}
+		if (uUnicode == 0x20)
+		{
+			fprintf(fp, "<sp/> ");
+		}
+		else
+		{
+			fprintf(fp, "&#x%04X; ", uUnicode);
+		}
+		nIndex++;
+		if (nIndex % 16 == 0)
+		{
+			fprintf(fp, "\r\n");
 		}
 	}
 	fprintf(fp, "\r\n");

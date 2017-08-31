@@ -2,14 +2,14 @@
 
 ## Usage
 
-- ffnt2cfnt
+- bcfnt2charset
 ~~~
-ffnt2cfnt font.bffnt font.bcfnt
+bcfnt2charset font.bcfnt charset.txt
 ~~~
 
-- font2charset
+- bffnt2charset
 ~~~
-font2charset font.bcfnt charset.txt
+bffnt2charset font.bffnt charset.txt
 ~~~
 
 - charset2xlor
