@@ -13,6 +13,7 @@ enum EConst
 	kConstSignatureTGLP = SDW_CONVERT_ENDIAN32('TGLP'),
 	kConstSignatureCWDH = SDW_CONVERT_ENDIAN32('CWDH'),
 	kConstSignatureCMAP = SDW_CONVERT_ENDIAN32('CMAP'),
+	kConstSignatureKRNG = SDW_CONVERT_ENDIAN32('KRNG'),
 	kConstSignatureGLGR = SDW_CONVERT_ENDIAN32('GLGR'),
 	kConstSignatureHTGL = SDW_CONVERT_ENDIAN32('HTGL'),
 
@@ -160,6 +161,44 @@ struct SCMapInfoScan_NX
 	SCMapScanEntry_NX Entries[1];
 } SDW_GNUC_PACKED;
 
+struct SKerningFirstTableElem_CTR_CAFE
+{
+	u16 FirstWord;
+	u16 Offset;
+} SDW_GNUC_PACKED;
+
+struct SKerningFirstTableElem_NX
+{
+	u32 FirstWord;
+	u32 Offset;
+} SDW_GNUC_PACKED;
+
+struct SKerningSecondTableElem_CTR_CAFE
+{
+	u16 SecondWord;
+	n16 KerningValue;
+} SDW_GNUC_PACKED;
+
+struct SKerningSecondTableElem_NX
+{
+	u32 SecondWord;
+	n16 KerningValue;
+	u8 Padding[2];
+} SDW_GNUC_PACKED;
+
+struct SKerningSecondTable_CTR_CAFE
+{
+	u16 SecondWordNum;
+	SKerningSecondTableElem_CTR_CAFE Elems[1];
+} SDW_GNUC_PACKED;
+
+struct SKerningSecondTable_NX
+{
+	u16 SecondWordCount;
+	u8 Padding[2];
+	SKerningSecondTableElem_NX Elems[1];
+} SDW_GNUC_PACKED;
+
 struct SFontTextureGlyph
 {
 	u8 CellWidth;
@@ -202,6 +241,19 @@ struct SFontCodeMap_NX
 	u16 Reserved;
 	u32 PNext;
 	u16 MapInfo[1];
+} SDW_GNUC_PACKED;
+
+struct SFontKerningTable_CTR_CAFE
+{
+	u16 FirstWordNum;
+	SKerningFirstTableElem_CTR_CAFE FirstTable[1];
+} SDW_GNUC_PACKED;
+
+struct SFontKerningTable_NX
+{
+	u16 FirstWordCount;
+	u8 Padding[2];
+	SKerningFirstTableElem_NX FirstTable[1];
 } SDW_GNUC_PACKED;
 
 struct SFontInformation

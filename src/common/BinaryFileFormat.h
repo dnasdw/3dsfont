@@ -5,7 +5,7 @@
 
 #define MAKE_VERSION(major, minor, micro, binaryBugFix) \
 	static_cast<u32>( \
-		(static_cast<u8>(major) << 24) | (static_cast<u8>(micro) << 16) \
+		(static_cast<u8>(major) << 24) | (static_cast<u8>(minor) << 16) \
 		| (static_cast<u8>(micro) << 8) | (static_cast<u8>(binaryBugFix)) \
 	)
 
