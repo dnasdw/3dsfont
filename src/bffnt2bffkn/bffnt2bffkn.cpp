@@ -61,15 +61,33 @@ int UMain(int argc, UChar* argv[])
 				if (!bNX)
 				{
 					SFontKerningTable_CTR_CAFE* pFontKerningTable = reinterpret_cast<SFontKerningTable_CTR_CAFE*>(pBinaryBlockHeader + 1);
+					if (eEndianness == kEndiannessBigEndian)
+					{
+						pFontKerningTable->FirstWordNum = SDW_CONVERT_ENDIAN16(pFontKerningTable->FirstWordNum);
+					}
 					u32 uFirstWordCount = pFontKerningTable->FirstWordNum;
 					for (u32 i = 0; i < uFirstWordCount; i++)
 					{
+						if (eEndianness == kEndiannessBigEndian)
+						{
+							pFontKerningTable->FirstTable[i].FirstWord = SDW_CONVERT_ENDIAN16(pFontKerningTable->FirstTable[i].FirstWord);
+							pFontKerningTable->FirstTable[i].Offset = SDW_CONVERT_ENDIAN16(pFontKerningTable->FirstTable[i].Offset);
+						}
 						u16 uFirstWord = pFontKerningTable->FirstTable[i].FirstWord;
 						u32 uKerningSecondTableOffset = pFontKerningTable->FirstTable[i].Offset;
 						SKerningSecondTable_CTR_CAFE* pKerningSecondTable = reinterpret_cast<SKerningSecondTable_CTR_CAFE*>(reinterpret_cast<u8*>(pFontKerningTable) + uKerningSecondTableOffset);
+						if (eEndianness == kEndiannessBigEndian)
+						{
+							pKerningSecondTable->SecondWordNum = SDW_CONVERT_ENDIAN16(pKerningSecondTable->SecondWordNum);
+						}
 						u32 uSecondWordCount = pKerningSecondTable->SecondWordNum;
 						for (u32 j = 0; j < uSecondWordCount; j++)
 						{
+							if (eEndianness == kEndiannessBigEndian)
+							{
+								pKerningSecondTable->Elems[j].SecondWord = SDW_CONVERT_ENDIAN16(pKerningSecondTable->Elems[j].SecondWord);
+								pKerningSecondTable->Elems[j].KerningValue = SDW_CONVERT_ENDIAN16(pKerningSecondTable->Elems[j].KerningValue);
+							}
 							u16 uSecondWord = pKerningSecondTable->Elems[j].SecondWord;
 							n32 nKerningValue = pKerningSecondTable->Elems[j].KerningValue;
 							vFontKerning.push_back(make_pair(make_pair(uFirstWord, uSecondWord), nKerningValue));
@@ -79,15 +97,33 @@ int UMain(int argc, UChar* argv[])
 				else
 				{
 					SFontKerningTable_NX* pFontKerningTable = reinterpret_cast<SFontKerningTable_NX*>(pBinaryBlockHeader + 1);
+					if (eEndianness == kEndiannessBigEndian)
+					{
+						pFontKerningTable->FirstWordCount = SDW_CONVERT_ENDIAN16(pFontKerningTable->FirstWordCount);
+					}
 					u32 uFirstWordCount = pFontKerningTable->FirstWordCount;
 					for (u32 i = 0; i < uFirstWordCount; i++)
 					{
+						if (eEndianness == kEndiannessBigEndian)
+						{
+							pFontKerningTable->FirstTable[i].FirstWord = SDW_CONVERT_ENDIAN32(pFontKerningTable->FirstTable[i].FirstWord);
+							pFontKerningTable->FirstTable[i].Offset = SDW_CONVERT_ENDIAN32(pFontKerningTable->FirstTable[i].Offset);
+						}
 						u16 uFirstWord = pFontKerningTable->FirstTable[i].FirstWord & 0xFFFF;
 						u32 uKerningSecondTableOffset = pFontKerningTable->FirstTable[i].Offset;
 						SKerningSecondTable_NX* pKerningSecondTable = reinterpret_cast<SKerningSecondTable_NX*>(reinterpret_cast<u8*>(pFontKerningTable) + uKerningSecondTableOffset);
+						if (eEndianness == kEndiannessBigEndian)
+						{
+							pKerningSecondTable->SecondWordCount = SDW_CONVERT_ENDIAN16(pKerningSecondTable->SecondWordCount);
+						}
 						u32 uSecondWordCount = pKerningSecondTable->SecondWordCount;
 						for (u32 j = 0; j < uSecondWordCount; j++)
 						{
+							if (eEndianness == kEndiannessBigEndian)
+							{
+								pKerningSecondTable->Elems[j].SecondWord = SDW_CONVERT_ENDIAN32(pKerningSecondTable->Elems[j].SecondWord);
+								pKerningSecondTable->Elems[j].KerningValue = SDW_CONVERT_ENDIAN16(pKerningSecondTable->Elems[j].KerningValue);
+							}
 							u16 uSecondWord = pKerningSecondTable->Elems[j].SecondWord;
 							n32 nKerningValue = pKerningSecondTable->Elems[j].KerningValue;
 							vFontKerning.push_back(make_pair(make_pair(uFirstWord, uSecondWord), nKerningValue));
